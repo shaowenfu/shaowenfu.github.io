@@ -1,95 +1,117 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const sectionsContainer = document.querySelector('.sections-container');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section');
+    let isScrolling = false;
+    let currentSection = 0;
 
-// Navbar scroll effect
-const navbar = document.querySelector('.navbar');
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-    if (lastScrollY < window.scrollY) {
-        navbar.classList.add('nav-hidden');
-    } else {
-        navbar.classList.remove('nav-hidden');
+    // Update active navigation link based on current section
+    function updateActiveLink() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[currentSection].classList.add('active');
     }
-    lastScrollY = window.scrollY;
-});
 
-// Add animation to sections when they come into view
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
-
-// Handle navigation active state
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Update active nav link based on scroll position
-function updateActiveNav() {
-    let currentSection = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= (sectionTop - 300)) {
-            currentSection = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === currentSection) {
-            link.classList.add('active');
-        }
-    });
-}
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('.nav-link').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+    // Smooth scroll to section
+    function scrollToSection(index) {
+        if (isScrolling) return;
+        isScrolling = true;
+        currentSection = index;
         
-        window.scrollTo({
-            top: targetSection.offsetTop - 100,
-            behavior: 'smooth'
+        const section = sections[index];
+        section.scrollIntoView({ behavior: 'smooth' });
+        updateActiveLink();
+
+        setTimeout(() => {
+            isScrolling = false;
+        }, 1000);
+    }
+
+    // Handle navigation click
+    navLinks.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollToSection(index);
         });
     });
-});
 
-// Update active nav link on scroll
-window.addEventListener('scroll', updateActiveNav);
-window.addEventListener('load', updateActiveNav);
+    // Handle wheel event for smooth scrolling
+    sectionsContainer.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        
+        if (isScrolling) return;
 
-// Add hover effect to project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-10px)';
+        if (e.deltaY > 0 && currentSection < sections.length - 1) {
+            // Scroll down
+            scrollToSection(currentSection + 1);
+        } else if (e.deltaY < 0 && currentSection > 0) {
+            // Scroll up
+            scrollToSection(currentSection - 1);
+        }
+    }, { passive: false });
+
+    // Handle keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (isScrolling) return;
+
+        if ((e.key === 'ArrowDown' || e.key === 'PageDown') && currentSection < sections.length - 1) {
+            e.preventDefault();
+            scrollToSection(currentSection + 1);
+        } else if ((e.key === 'ArrowUp' || e.key === 'PageUp') && currentSection > 0) {
+            e.preventDefault();
+            scrollToSection(currentSection - 1);
+        }
     });
 
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0)';
+    // Handle touch events for mobile
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    sectionsContainer.addEventListener('touchstart', (e) => {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    sectionsContainer.addEventListener('touchmove', (e) => {
+        if (isScrolling) {
+            e.preventDefault();
+            return;
+        }
+        touchEndY = e.touches[0].clientY;
+    }, { passive: false });
+
+    sectionsContainer.addEventListener('touchend', () => {
+        if (isScrolling) return;
+
+        const diff = touchStartY - touchEndY;
+        const sensitivity = 50; // minimum distance for swipe
+
+        if (Math.abs(diff) < sensitivity) return;
+
+        if (diff > 0 && currentSection < sections.length - 1) {
+            // Swipe up
+            scrollToSection(currentSection + 1);
+        } else if (diff < 0 && currentSection > 0) {
+            // Swipe down
+            scrollToSection(currentSection - 1);
+        }
     });
+
+    // Intersection Observer to update current section
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = Array.from(sections).indexOf(entry.target);
+                if (!isScrolling && index !== currentSection) {
+                    currentSection = index;
+                    updateActiveLink();
+                }
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    sections.forEach(section => observer.observe(section));
+
+    // Initial active state
+    updateActiveLink();
 });
