@@ -13,54 +13,33 @@
         <aside class="profile-sidebar">
             <div class="profile-card">
                 <!-- Basic Info -->
-                <div class="profile-header">
-                    <img src="images/profile_picture.jpg" alt="Shaowen Fu" class="profile-image">
-                    <h1>付少文</h1>
-                    <h2>Shaowen Fu (Sherwen)</h2>
-                    <ul class="basic-info">
-                        <li><span>Gender:</span> Male</li>
-                        <li><span>Date of Birth:</span> July 14, 2004</li>
-                        <li><span>Hometown:</span> Yongzhou, Hunan, China</li>
-                        <li><span>Nationality:</span> China</li>
+                <img src="images/profile_picture.jpg" alt="Shaowen Fu" class="profile-image">
+                <h1>Sherwen Fu</h1>
+                <h2>付少文(Shaowen Fu)</h2>
+                <h4><a href="https://www.scu.edu.cn/" target="_blank">SiChuan University</a></h4> 
+                <h4><a href="https://cs.scu.edu.cn/" target="_blank">Computer Science and Technology</a></h4>
+                <h4>Class of 2022</h4>
+            </div>
+            <!-- Contact Info -->
+            <div class="info-section">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <ul>
+                        <img src="icons/phone-call_gray.svg" alt="Phone" width="20px">
+                        <span>(+86) 19950243795</span>
                     </ul>
-                </div>
-                
-                <!-- Education Info -->
-                <div class="info-section">
-                    <h3>Education</h3>
-                    <div class="education-info">
-                        <p class="university"><a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a></p>
-                        <p class="grade">Junior, Class of 2022</p>
-                        <p class="major">Computer Science and Technology</p>
-                    </div>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="info-section">
-                    <h3>Contact</h3>
-                    <ul class="contact-list">
-                        <li>
-                            <img src="icons/phone-call_gray.svg" alt="Phone" width="20px">
-                            <span>(+86) 19950243795</span>
-                        </li>
-                        <li>
-                            <img src="icons/gmail.png" alt="Gmail" width="20px">
-                            <a href="mailto:shaowenfu.pg@gmail.com">shaowenfu.pg@gmail.com</a>
-                        </li>
-                        <li>
-                            <img src="icons/mail_gray.svg" alt="QQ Mail" width="20px">
-                            <a href="mailto:3378616865@qq.com">3378616865@qq.com</a>
-                        </li>
-                        <li>
-                            <img src="icons/wechat.png" alt="WeChat" width="20px">
-                            <span>FuSherwen</span>
-                        </li>
-                        <li>
-                            <img src="icons/github.jpg" alt="GitHub" width="20px">
-                            <a href="https://github.com/shaowenfu" target="_blank">@SherwenFu</a>
-                        </li>
+                    <ul>
+                        <img src="icons/gmail.png" alt="Gmail" width="20px">
+                        <a href="mailto:shaowenfu.pg@gmail.com">shaowenfu.pg@gmail.com</a>
                     </ul>
-                </div>
+                    <ul>
+                        <img src="icons/github.png" alt="GitHub" width="20px">
+                        <a href="https://github.com/shaowenfu" target="_blank">@SherwenFu</a>
+                    </ul>
+                    <ul>
+                        <img src="icons/Linkedin.png" alt="LinkedIn" width="20px">
+                        <a href="https://www.linkedin.com/in/shaowenfu/" target="_blank">@SherwenFu</a>
+                    </ul>
             </div>
         </aside>
 
@@ -69,13 +48,13 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="#about" class="nav-link active">About</a></li>
-                    <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#research" class="nav-link">Research</a></li>
-                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#experiences" class="nav-link">Experiences</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link active">About</a></li>
+                    <li><a href="education.html" class="nav-link">Education</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
                 </ul>
             </nav>
 
@@ -84,125 +63,154 @@
                 <section id="about" class="section">
                     <div class="section-content">
                         <h2>About Me</h2>
-                        <div class="content-block">
-                            <p>For the past two and a half years, I have been immersed in the study of Computer Science, a field that continues to captivate and intrigue me. My participation in numerous competitions has been instrumental, providing invaluable experiences that have not only honed my research abilities but also deepened my comprehension of the discipline.</p>
-                        </div>
-                    </div>
-                </section>
+                        
+                        <!-- Personal Info Cards -->
+                        <div class="info-cards">
+                            <!-- Basic Info Card -->
+                            <div class="info-card">
+                                <div class="card-header">
+                                    <i class="fas fa-user"></i>
+                                    <h3>Basic Information</h3>
+                                </div>
+                                <ul class="info-list">
+                                    <li><i class="fas fa-graduation-cap"></i> Junior at SiChuan University</li>
+                                    <li><i class="fas fa-code"></i> Computer Science and Technology</li>
+                                    <li><i class="fas fa-calendar-alt"></i> Class of 2022</li>
+                                    <li><i class="fas fa-user-graduate"></i> Administrative Class 1</li>
+                                </ul>
+                            </div>
 
-                <!-- Education Section -->
-                <section id="education" class="section">
-                    <div class="section-content">
-                        <h2>Education Background</h2>
-                        <div class="content-block">
-                            <div class="education-item">
-                                <h3>Sichuan University</h3>
-                                <p class="duration">2022 - Present</p>
-                                <p class="degree">Bachelor of Engineering in Computer Science and Technology</p>
-                                <ul class="education-details">
-                                    <li>Weighted Average Mark: 88.31</li>
-                                    <li>Weighted Average Mark of Compulsory Courses: 87.6</li>
-                                    <li>Earned Credits: 137</li>
-                                    <li>Earned Compulsory Credits: 100</li>
+                            <!-- Personal Details Card -->
+                            <div class="info-card">
+                                <div class="card-header">
+                                    <i class="fas fa-id-card"></i>
+                                    <h3>Personal Details</h3>
+                                </div>
+                                <ul class="info-list">
+                                    <li><i class="fas fa-venus-mars"></i> Male</li>
+                                    <li><i class="fas fa-flag"></i> Chinese (Han)</li>
+                                    <li><i class="fas fa-birthday-cake"></i> July 14, 2004</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> Yongzhou, Hunan, China</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <!-- Research Section -->
-                <section id="research" class="section">
-                    <div class="section-content">
-                        <h2>Research Experience</h2>
-                        <div class="content-block">
-                            <div class="research-item">
-                                <h3>Multi-modal Learning Research</h3>
-                                <p class="subtitle">Peng Hu's Laboratory, Sichuan University</p>
-                                <p class="date">October 2023 – Present</p>
-                                <ul>
-                                    <li>Engaged in research focused on multi-modal learning under Professor Peng Hu's guidance</li>
-                                    <li>Developed strong foundation in literature review and technical experimentation</li>
-                                    <li>Contributing to innovative approaches in multi-modal learning techniques</li>
-                                </ul>
+                        <!-- Story Section -->
+                        <div class="story-section">
+                            <div class="story-header">
+                                <i class="fas fa-quote-left"></i>
+                                <h3>My Journey</h3>
+                            </div>
+                            <div class="story-content">
+                                <p>For the past two and a half years, I have been immersed in the study of Computer Science, 
+                                   a field that continues to captivate and intrigue me. My participation in numerous competitions 
+                                   has been instrumental, providing invaluable experiences that have not only honed my research 
+                                   abilities but also deepened my comprehension of the discipline.</p>
+                                <p>A year ago, under the guidance of my mentor, I began to concentrate my efforts on multi-modal learning, 
+                                   a domain that has allowed me to make significant strides and absorb a wealth of knowledge. Currently, 
+                                   I am actively seeking additional opportunities that can offer fresh insights and diverse experiences.</p>
+                                <p>I approach this educational journey with unbridled passion and a steadfast conviction that my future 
+                                   endeavors will yield remarkable achievements.</p>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <!-- Achievements Section -->
-                <section id="achievements" class="section">
-                    <div class="section-content">
-                        <h2>Achievements & Awards</h2>
-                        <div class="content-block">
-                            <div class="achievement-item">
-                                <h3>Academic Achievements</h3>
-                                <ul>
-                                    <li>First Prize, 2024 China Undergraduate Mathematical Contest in Modeling (Provincial Level)</li>
-                                    <li>Participant, Mathematical Contest in Modeling (MCM/ICM)</li>
-                                </ul>
+                        <!-- Research Interests -->
+                        <div class="interests-section">
+                            <div class="interests-header">
+                                <i class="fas fa-microscope"></i>
+                                <h3>Research Interests</h3>
                             </div>
-                            <div class="achievement-item">
-                                <h3>Competition Awards</h3>
-                                <ul>
-                                    <li>National College Internet of Things Competition</li>
-                                    <li>Sichuan University Programming Competition</li>
-                                </ul>
+                            <div class="interests-grid">
+                                <div class="interest-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Multi-modal Learning</span>
+                                </div>
+                                <!-- 可以添加更多研究兴趣 -->
                             </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Projects Section -->
-                <section id="projects" class="section">
-                    <div class="section-content">
-                        <h2>Projects</h2>
-                        <div class="project-grid">
-                            <div class="project-card">
-                                <h3>Digital Night Market Economy Platform</h3>
-                                <p>A comprehensive platform integrating night market management and digital solutions</p>
-                                <a href="https://github.com/shaowenfu/Digital-Night-Market-Economy-Integrated-Platform--UI-design-for-boothowners" class="project-link">
-                                    <i class="fab fa-github"></i> View Project
-                                </a>
-                            </div>
-                            <div class="project-card">
-                                <h3>AI Text-Image Assistant</h3>
-                                <p>Innovative application combining text and image processing capabilities</p>
-                                <a href="https://github.com/shaowenfu/I2T-magic-coworker" class="project-link">
-                                    <i class="fab fa-github"></i> View Project
-                                </a>
-                            </div>
-                            <div class="project-card">
-                                <h3>Smart Port Scheduling System</h3>
-                                <p>Advanced scheduling system for port operations optimization</p>
-                                <a href="https://github.com/shaowenfu/Huawei-Developer-Competition-2024-APAC" class="project-link">
-                                    <i class="fab fa-github"></i> View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Experiences Section -->
-                <section id="experiences" class="section">
-                    <div class="section-content">
-                        <h2>Related Experiences</h2>
-                        <div class="content-block">
-                            <!-- Add your related experiences here -->
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Skills Section -->
-                <section id="skills" class="section">
-                    <div class="section-content">
-                        <h2>Skills & Interests</h2>
-                        <div class="content-block">
-                            <!-- Add your skills and interests here -->
                         </div>
                     </div>
                 </section>
             </div>
         </main>
+    </div>
+
+    <!-- Add modals at the end of body -->
+    <div id="experienceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('experienceModal')">&times;</span>
+            <h2>Detailed Experience</h2>
+            <div class="modal-body">
+                <h3>Freshman Year</h3>
+                <div class="experience-item">
+                    <h4>Blue Bridge Cup Programming Competition (Group A, C/C++)</h4>
+                    <p class="date">2023/4</p>
+                    <div class="competition-intro">
+                        <h5>Competition Introduction</h5>
+                        <p>The Blue Bridge Cup, also known as the National Software and Information Technology Professionals Competition, is a nationwide competition for college students in mainland China. Hosted by the Ministry of Education of the People's Republic of China, the Ministry of Industry and Information Technology, and the National Center for Talent Exchange and the National Higher Education Students Information Consulting and Employment Guidance Center.</p>
+                    </div>
+                    <p>I participated in the software category individual competition (C/C++ programming) where contestants were required to be familiar with various algorithms and data structures. Through the process of solving problems, I experienced the joy of using programming to solve problems and became fascinated by the charm of computer science.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4>National College Internet of Things Competition</h4>
+                    <p class="date">2023/6~2023/9</p>
+                    <div class="competition-intro">
+                        <h5>Competition Introduction</h5>
+                        <p>This is a national competition in China aimed at promoting the development of the Internet of Things (IoT) profession and talent cultivation. It stimulates college students' innovation and entrepreneurship enthusiasm through IoT technology and promotes the development of university students' innovation and entrepreneurship.</p>
+                    </div>
+                    <p>My team and I chose a topic focusing on urban smart environments and decided to build a digital night market management system combining software and hardware. This project involved hardware programming, communication principles, artificial intelligence, and more.</p>
+                    <p>Our project won the national second prize in this competition. After the competition, our project continued to iterate, and we are currently applying for university student innovation and entrepreneurship projects. We have also obtained a patent and several software copyrights.</p>
+                </div>
+
+                <h3>Sophomore Year</h3>
+                <div class="experience-item">
+                    <h4>China Undergraduate Mathematical Contest in Modeling</h4>
+                    <p class="date">2023/9</p>
+                    <p>Participated in this prestigious mathematical modeling competition, applying mathematical principles to solve real-world problems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="researchModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('researchModal')">&times;</span>
+            <h2>Research Details</h2>
+            <div class="modal-body">
+                <h3>Multi-modal Learning Research</h3>
+                <p class="subtitle">Peng Hu's Laboratory, Sichuan University</p>
+                <p class="date">October 2023 – Present</p>
+                
+                <div class="research-details">
+                    <h4>Research Focus</h4>
+                    <ul>
+                        <li>Multi-modal learning architectures and frameworks</li>
+                        <li>Cross-modal representation learning techniques</li>
+                        <li>Advanced fusion techniques for heterogeneous data</li>
+                        <li>Applications in computer vision and natural language processing</li>
+                        <li>Deep learning model optimization and performance improvement</li>
+                    </ul>
+
+                    <h4>Key Responsibilities</h4>
+                    <ul>
+                        <li>Conducting comprehensive literature reviews in multi-modal learning</li>
+                        <li>Implementing and testing various multi-modal learning models</li>
+                        <li>Analyzing and improving model performance through experimentation</li>
+                        <li>Collaborating with team members on research projects</li>
+                        <li>Participating in regular research discussions and presentations</li>
+                    </ul>
+
+                    <h4>Skills Developed</h4>
+                    <ul>
+                        <li>Advanced deep learning frameworks (PyTorch, TensorFlow)</li>
+                        <li>Research methodology and experimental design</li>
+                        <li>Technical writing and documentation</li>
+                        <li>Data analysis and visualization</li>
+                        <li>Problem-solving and critical thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
