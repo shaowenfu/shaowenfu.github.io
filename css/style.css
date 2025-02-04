@@ -1,29 +1,29 @@
 /* Global Styles */
 :root {
-    /* Natural Fresh Color Scheme */
-    --primary-color: #74B27B;      /* 主要强调色 - 清新绿 */
-    --primary-dark: #5E9164;       /* 深绿色，用于悬停状态 */
-    --secondary-color: #E96950;    /* 次要强调色 - 珊瑚橙 */
-    --secondary-dark: #D15642;     /* 深珊瑚色，用于悬停状态 */
-    --accent-color: #FACF55;       /* 点缀色 - 芒果黄 */
+    /* Vintage Color Scheme */
+    --primary-color: #7B6B5B;      /* 主要强调色 - 复古棕 */
+    --primary-dark: #5A4E42;       /* 深棕色，用于悬停状态 */
+    --secondary-color: #A65D57;    /* 次要强调色 - 暗红色 */
+    --secondary-dark: #8B4E4A;     /* 深红色，用于悬停状态 */
+    --accent-color: #8F9779;       /* 点缀色 - 橄榄绿 */
     
     /* 背景色系 */
-    --background-color: #FDF6EF;   /* 米白色背景 */
-    --surface-color: #FFFFFF;      /* 纯白色卡片背景 */
-    --surface-color-light: #F5F5F5; /* 浅灰色，用于悬停状态 */
+    --background-color: #F5F2EB;   /* 古纸色背景 */
+    --surface-color: #FFFCF5;      /* 米白色卡片背景 */
+    --surface-color-light: #E8E4DB; /* 浅灰褐色，用于悬停状态 */
     
     /* 文字色系 */
-    --text-primary: #2C3E50;       /* 主要文字颜色 - 深青灰 */
-    --text-secondary: #546E7A;     /* 次要文字颜色 - 中青灰 */
-    --text-tertiary: #90A4AE;      /* 辅助文字颜色 - 浅青灰 */
+    --text-primary: #2B2522;       /* 主要文字颜色 - 深褐色 */
+    --text-secondary: #564E4A;     /* 次要文字颜色 - 中褐色 */
+    --text-tertiary: #847D77;      /* 辅助文字颜色 - 浅褐色 */
     
     /* 边框和分割线 */
-    --border-color: #E0E0E0;       /* 浅灰色边框 */
+    --border-color: #D5CEC5;       /* 复古边框色 */
     
     /* 功能色 */
-    --success-color: #81C784;      /* 成功状态 - 柔和绿 */
-    --warning-color: #FFD54F;      /* 警告状态 - 柔和黄 */
-    --error-color: #E57373;        /* 错误状态 - 柔和红 */
+    --success-color: #739081;      /* 成功状态 - 复古绿 */
+    --warning-color: #C4A484;      /* 警告状态 - 复古棕 */
+    --error-color: #B47267;        /* 错误状态 - 复古红 */
     
     /* Layout Variables */
     --sidebar-width: 300px;
@@ -43,6 +43,12 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--background-color);
+    background-image: 
+        linear-gradient(
+            rgba(245, 242, 235, 0.8),
+            rgba(245, 242, 235, 0.8)
+        ),
+        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLy');
 }
 
 /* Container Layout */
@@ -65,7 +71,7 @@ body {
 /* Content Navigation */
 .content-nav {
     background-color: var(--surface-color);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     backdrop-filter: blur(10px);
     padding: 0 var(--content-padding);
     height: var(--nav-height);
@@ -97,15 +103,18 @@ body {
     position: relative;
     white-space: nowrap;
     font-size: 0.9rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
 }
 
 .content-nav .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .content-nav .nav-link.active {
     color: var(--primary-color);
     background-color: rgba(116, 178, 123, 0.1);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .content-nav .nav-link.active::after {
@@ -155,25 +164,27 @@ body {
 
 .section-content h2 {
     position: relative;
-    display: inline-block;
-    color: var(--text-primary);
-    font-size: 2.25rem;
+    font-family: 'Georgia', serif;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid var(--primary-color);
-    background: var(--surface-color);
-    z-index: 1;
 }
 
 .section-content h2::after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    border-radius: 3px;
+    height: 1px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--border-color),
+        var(--border-color) 6px,
+        transparent 6px,
+        transparent 12px
+    );
 }
 
 /* Profile Sidebar */
@@ -191,7 +202,7 @@ body {
 .profile-card, .info-section, .section-content {
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 12px rgba(116, 178, 123, 0.1);
+    box-shadow: 0 4px 12px rgba(123, 107, 91, 0.1);
 }
 
 .profile-card{
@@ -224,10 +235,10 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--primary-color);
+    border: 8px solid var(--surface-color);
     padding: 4px;
     background-color: var(--surface-color);
-    box-shadow: 0 8px 24px rgba(116, 178, 123, 0.2);
+    box-shadow: 0 4px 12px rgba(123, 107, 91, 0.2);
     margin: 0 auto 2rem;
     display: block;
     transition: all 0.3s ease;
@@ -240,6 +251,17 @@ body {
     transform: scale(1.05);
     border-color: var(--accent-color);
     box-shadow: 0 12px 32px rgba(250, 207, 85, 0.3);
+}
+
+.profile-image::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 1px solid var(--border-color);
+    z-index: -1;
 }
 
 /* Content Block Styling */
@@ -278,7 +300,7 @@ body {
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    box-shadow: 0 6px 16px rgba(123, 107, 91, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -329,18 +351,19 @@ body {
 }
 
 .details-btn {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--surface-color);
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
 }
 
 .details-btn:hover {
-    background-color: var(--secondary-dark);
+    background-color: var(--primary-dark);
     transform: translateY(-2px);
 }
 
@@ -366,8 +389,9 @@ body {
     max-width: 800px;
     max-height: 90vh;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(116, 178, 123, 0.2);
+    box-shadow: 0 8px 24px rgba(123, 107, 91, 0.2);
     overflow-y: auto;
+    border: 1px solid var(--border-color);
 }
 
 .close-btn {
@@ -654,7 +678,7 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    box-shadow: 0 6px 16px rgba(123, 107, 91, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -779,6 +803,8 @@ footer {
     max-height: 80vh;
     overflow-y: auto;
     animation: modalFadeIn 0.3s;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(123, 107, 91, 0.2);
 }
 
 @keyframes modalFadeIn {
@@ -1160,7 +1186,7 @@ footer {
 
 .research-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    box-shadow: 0 6px 16px rgba(123, 107, 91, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -1244,7 +1270,7 @@ footer {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    background: var(--accent-color);
     opacity: 0.3;
 }
 
