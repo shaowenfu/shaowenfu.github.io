@@ -1,28 +1,29 @@
 /* Global Styles */
 :root {
-    /* Modern Light Color Scheme */
-    --primary-color: #4EA1DB;      /* 主要强调色 - 蓝色 */
-    --primary-dark: #3B89C3;       /* 深蓝色，用于悬停状态 */
-    --secondary-color: #6F978E;    /* 次要强调色 - 青绿色 */
-    --secondary-dark: #5C847B;     /* 深青绿色，用于悬停状态 */
+    /* Natural Fresh Color Scheme */
+    --primary-color: #74B27B;      /* 主要强调色 - 清新绿 */
+    --primary-dark: #5E9164;       /* 深绿色，用于悬停状态 */
+    --secondary-color: #E96950;    /* 次要强调色 - 珊瑚橙 */
+    --secondary-dark: #D15642;     /* 深珊瑚色，用于悬停状态 */
+    --accent-color: #FACF55;       /* 点缀色 - 芒果黄 */
     
     /* 背景色系 */
-    --background-color: #FFFFFF;    /* 纯白背景 */
-    --surface-color: #F8F9FA;      /* 浅灰色卡片背景 */
-    --surface-color-light: #E9ECEF; /* 稍深灰色，用于悬停状态 */
+    --background-color: #FDF6EF;   /* 米白色背景 */
+    --surface-color: #FFFFFF;      /* 纯白色卡片背景 */
+    --surface-color-light: #F5F5F5; /* 浅灰色，用于悬停状态 */
     
     /* 文字色系 */
-    --text-primary: #333333;       /* 主要文字颜色 - 深灰 */
-    --text-secondary: #666666;     /* 次要文字颜色 - 中灰 */
-    --text-tertiary: #999999;      /* 辅助文字颜色 - 浅灰 */
+    --text-primary: #2C3E50;       /* 主要文字颜色 - 深青灰 */
+    --text-secondary: #546E7A;     /* 次要文字颜色 - 中青灰 */
+    --text-tertiary: #90A4AE;      /* 辅助文字颜色 - 浅青灰 */
     
     /* 边框和分割线 */
-    --border-color: #DEE2E6;       /* 浅灰色边框 */
+    --border-color: #E0E0E0;       /* 浅灰色边框 */
     
     /* 功能色 */
-    --success-color: #28A745;      /* 成功状态 - 绿色 */
-    --warning-color: #FFC107;      /* 警告状态 - 黄色 */
-    --error-color: #DC3545;        /* 错误状态 - 红色 */
+    --success-color: #81C784;      /* 成功状态 - 柔和绿 */
+    --warning-color: #FFD54F;      /* 警告状态 - 柔和黄 */
+    --error-color: #E57373;        /* 错误状态 - 柔和红 */
     
     /* Layout Variables */
     --sidebar-width: 300px;
@@ -63,14 +64,14 @@ body {
 
 /* Content Navigation */
 .content-nav {
-    background-color: var(--background-color);
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
     backdrop-filter: blur(10px);
     padding: 0 var(--content-padding);
     height: var(--nav-height);
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -104,8 +105,17 @@ body {
 
 .content-nav .nav-link.active {
     color: var(--primary-color);
-    background-color: var(--surface-color);
-    font-weight: 600;
+    background-color: rgba(116, 178, 123, 0.1);
+}
+
+.content-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
 }
 
 /* Sections Container */
@@ -134,7 +144,7 @@ body {
     border-radius: 24px;
     padding: 2.5rem;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(116, 178, 123, 0.1);
     border: 1px solid var(--border-color);
     backdrop-filter: blur(10px);
     position: relative;
@@ -143,16 +153,27 @@ body {
     flex-direction: column;
 }
 
-.section h2 {
+.section-content h2 {
+    position: relative;
+    display: inline-block;
     color: var(--text-primary);
     font-size: 2.25rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 3px solid var(--primary-color);
-    position: sticky;
-    top: 0;
     background: var(--surface-color);
     z-index: 1;
+}
+
+.section-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-radius: 3px;
 }
 
 /* Profile Sidebar */
@@ -170,7 +191,7 @@ body {
 .profile-card, .info-section, .section-content {
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(116, 178, 123, 0.1);
 }
 
 .profile-card{
@@ -206,7 +227,7 @@ body {
     border: 4px solid var(--primary-color);
     padding: 4px;
     background-color: var(--surface-color);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(116, 178, 123, 0.2);
     margin: 0 auto 2rem;
     display: block;
     transition: all 0.3s ease;
@@ -217,8 +238,8 @@ body {
 
 .profile-image:hover {
     transform: scale(1.05);
-    border-color: var(--secondary-color);
-    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 32px rgba(250, 207, 85, 0.3);
 }
 
 /* Content Block Styling */
@@ -256,8 +277,9 @@ body {
 }
 
 .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    border-color: var(--primary-color);
 }
 
 .project-header {
@@ -311,14 +333,15 @@ body {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .details-btn:hover {
     background-color: var(--secondary-dark);
+    transform: translateY(-2px);
 }
 
 /* Modal Styles */
@@ -336,14 +359,14 @@ body {
 
 .modal-content {
     position: relative;
-    background: var(--background-color);
+    background-color: var(--surface-color);
     margin: 5vh auto;
     padding: 2rem;
     width: 90%;
     max-width: 800px;
     max-height: 90vh;
     border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(116, 178, 123, 0.2);
     overflow-y: auto;
 }
 
@@ -430,12 +453,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--surface-color-light);
-    border-radius: 4px;
+    background: var(--primary-color);
+    opacity: 0.8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
+    background: var(--primary-dark);
 }
 
 /* Responsive Design */
@@ -630,8 +653,9 @@ section h2 {
 }
 
 .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    border-color: var(--primary-color);
 }
 
 .project-card h3 {
@@ -746,7 +770,7 @@ footer {
 
 .modal-content {
     position: relative;
-    background-color: var(--background-color);
+    background-color: var(--surface-color);
     margin: 5% auto;
     padding: 20px;
     border-radius: 8px;
@@ -1135,8 +1159,9 @@ footer {
 }
 
 .research-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(116, 178, 123, 0.15);
+    border-color: var(--primary-color);
 }
 
 .card-header {
@@ -1149,7 +1174,7 @@ footer {
 }
 
 .card-header i {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 1.5rem;
 }
 
@@ -1184,7 +1209,7 @@ footer {
 }
 
 .interest-item i {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 1.5rem;
 }
 
@@ -1219,12 +1244,12 @@ footer {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--primary-color);
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
     opacity: 0.3;
 }
 
 .timeline-item i {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 1.2rem;
 }
 
