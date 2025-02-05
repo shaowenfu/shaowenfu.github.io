@@ -1,0 +1,101 @@
+## Freshman Year:
+
+- ① Blue Bridge Cup Programming Competition (Group A, C/C++)(2023/4)
+    - **Competition Introduction:**
+        
+        The Blue Bridge Cup, also known as the National Software and Information Technology Professionals Competition, is a nationwide competition for college students in mainland China. Hosted by the Ministry of Education of the People's Republic of China, the Ministry of Industry and Information Technology, and the National Center for Talent Exchange and the National Higher Education Students Information Consulting and Employment Guidance Center, the competition covers a wide range of computer-related subjects, including computer fundamentals, programming skills, algorithm design, digital circuits, and analog circuits. In 2021, it ranked 36th in the National College Student Competition Rankings released by the China Higher Education Association.
+        
+    
+    I participated in the software category individual competition (C/C++ programming) where contestants were required to be familiar with various algorithms and data structures. During the winter vacation, I self-studied some algorithms and data structures. Through the process of solving problems, I experienced the joy of using programming to solve problems and became fascinated by the charm of computer science.
+    
+- ② ACM Freshman Contest Finals(2023/5)
+    
+    This was a selection competition organized by our school's ACM training team, consisting of preliminary and final rounds. Unfortunately, I did not pass the final round to enter the school's ACM training team. However, looking back now, it might not have been that bad. I gradually discovered that my interests and passions might lean more towards applied and research-oriented activities.
+    
+- ③ National English Competition for College Students(2023/5)
+    
+    The National English Competition for College Students (NECCS) is jointly organized by the International English Language Teachers Association China and the College Foreign Language Teaching Research Association. It is the largest comprehensive English competition for college students in China, providing a platform for students to showcase their English skills and play a significant role in improving students' English proficiency and competitiveness.
+    
+- ④ Sichuan University Programming Competition(2023/5)
+    
+    This was an internal programming competition organized by the ACM training team at Sichuan University. The competition format was similar to the formal ACM competition and tested participants' abilities to solve complex problems using computer programming and algorithm design.
+    
+- ⑤ National College Internet of Things Competition(2023/6~2023/9)
+    - **Competition Introduction:**
+        
+        This is a national competition in China aimed at promoting the development of the Internet of Things (IoT) profession and talent cultivation. It stimulates college students' innovation and entrepreneurship enthusiasm through IoT technology and promotes the development of university students' innovation and entrepreneurship. The competition challenges participants' knowledge and practical skills in IoT through innovative applications, hardware design, and system architecture across various IoT application scenarios.
+        
+    
+    My team and I chose a topic focusing on urban smart environments and decided to build a digital night market management system combining software and hardware. This project involved hardware programming, communication principles, artificial intelligence, and more.
+    
+    Our project won the national second prize in this competition. After the competition, our project continued to iterate, and we are currently applying for university student innovation and entrepreneurship projects. We have also obtained a patent and several software copyrights.
+    
+    **For more details about the project, please refer to [Projects1](https://www.notion.so/About-Sherwen-dcb950bc3f0042209e8b9bf35af7f731?pvs=21) introduction.**
+    
+
+## Sophomore Year:
+
+- ⑥China Undergraduate Mathematical Contest in Modeling（2023/9）
+    - **Competition Overview:**
+        
+        The China Undergraduate Mathematical Contest in Modeling (CUMCM) is the largest fundamental discipline competition in China and the world's largest mathematical modeling competition. In 2023, it attracted participation from 1685 colleges and universities/schools, including 59611 teams (54158 undergraduate teams and 5453 vocational teams), with nearly 180,000 participants from China, the United States, Australia, and Malaysia. The competition typically presents practical problems or scenarios, requiring participants to apply mathematical modeling, computational methods, and professional knowledge to analyze and solve problems across various fields such as engineering, science, economics, and the environment. The aim is to assess participants' teamwork, innovative thinking, and problem-solving abilities. While the specific competition topics may vary each year, they always revolve around real-world problems, demanding participants to propose reasonable mathematical models and corresponding solutions.
+        
+    
+    In this competition, I served as the team captain, and we chose Topic A (Establishment and Layout Optimization of Optical Models for Sundials). As it was a more physics-oriented problem, I and my teammates from the Mathematics Department took charge of modeling. We first discussed and determined the general direction and approach to decompose the problem. Then, I was responsible for researching and providing geometric optical analysis for single-face sundials, while the mathematics students handled the mathematical and formulaic aspects of the calculation process, and the polymer science students were in charge of paper writing and graphics. I, as the programming member, utilized MATLAB and Python programming to carry out the computational process. The paper was collaboratively completed by the entire team.
+    
+    **For more details, please refer to the [Project2](https://www.notion.so/About-Sherwen-dcb950bc3f0042209e8b9bf35af7f731?pvs=21) section.**
+    
+- ⑦The Mathematical Contest in Modeling (MCM)&The Interdisciplinary Contest in Modeling (ICM)（2024/2）
+    - **Competition Overview:**
+        
+        The Mathematical Contest in Modeling (MCM) & The Interdisciplinary Contest in Modeling (ICM), collectively known as the MCM/ICM, is organized by the Consortium for Mathematics and Its Applications (COMAP) and sponsored by the Society for Industrial and Applied Mathematics (SIAM), the National Security Agency (NSA), and the Institute for Operations Research and the Management Sciences (INFORMS). This multi-day mathematical competition has been held annually on the first or second weekend of February since 1985.
+        
+        There are no standard answers to the competition questions.
+        
+        International teams of three college or high school students must select one problem from three MCM problems (typically one discussing continuous problems and another discussing discrete problems) and three ICM problems (usually related to specific disciplines, with two questions in 2015) to answer in the form of an original mathematical paper. Once the problems are announced, teams have 96 hours (usually from Thursday to Monday) to study and answer the question.
+        
+    
+    In the 2024 Mathematical Contest in Modeling (MCM/ICM), our team accepted the challenging Problem B, which involved developing a model to predict the location of a deep-sea exploration submersible in the Aegean Sea. The project aimed to provide a set of safety procedures for Maritime Cruises Mini-Submarines (MCMS), a Greek company, to address potential scenarios such as communication loss between the submersible and the mothership or possible mechanical failures. Our model, based on Newton's second law, incorporated factors such as water flow, seawater density, propulsion force, and resistance. Through Monte Carlo simulation and Analytic Hierarchy Process (AHP) analysis, we provided a reliable reference for the safe operation and effective search of the submersible.
+    
+    For more details, please refer to the [Project3](https://www.notion.so/About-Sherwen-dcb950bc3f0042209e8b9bf35af7f731?pvs=21) section.
+    
+- ⑧Huawei Developer Competition 2024 APAC（2024/3）
+    - **Competition Overview:**
+        
+        The Huawei Developer Competition is a large-scale software programming competition organized by Huawei for university students worldwide. In this event, participants are required to solve complex problems, showcasing their exceptional programming skills and innovative thinking. The competition, hosted by Huawei Cloud and featuring problem statements developed by Huawei's senior expert teams, aims to inspire participants' innovation enthusiasm and sense of responsibility.
+        
+    
+    In this competition, my teammates and I were responsible for developing an intelligent port scheduling system aimed at improving port logistics efficiency and resource allocation through optimized algorithms. Through this project, I not only honed my programming and algorithm design skills but also enhanced my ability to solve real-world problems. Additionally, it strengthened my experience in teamwork and project management.
+    
+    For more details, please refer to the [Project4](https://www.notion.so/About-Sherwen-dcb950bc3f0042209e8b9bf35af7f731?pvs=21) section.
+    
+
+## Junior year:
+
+- ⑨2024 China Undergraduate Mathematical Contest in Modeling
+    
+    First Prize, 2024 China Undergraduate Mathematical Contest in Modeling, Provincial LevelProject 
+    
+    Name: Optimization of Movement Trajectory and Speed Analysis of the "Bench Dragon"
+    
+    Competition Level: Provincial
+    
+    Award: First Prize (Team Leader)
+    
+    Project Overview
+    
+    As the team leader, I led a group of undergraduate students in the 2024 China Undergraduate Mathematical Contest in Modeling, focusing on optimizing the movement trajectory and speed control of the "Bench Dragon," a traditional Chinese folk performance. By developing mathematical models, we analyzed the trajectory and speed changes during the dragon's coiling and turning processes, providing theoretical support to enhance the performance's visual appeal and safety.
+    
+    Project Content
+    
+    1. Problem Analysis and Model Development: Established a mathematical model using equidistant spiral equations in polar coordinates to analyze the position and speed changes during the dragon's coiling and turning processes.
+    2. Collision Detection and Path Optimization: Developed a collision detection algorithm and optimized the turning path using a binary search method to ensure the dragon could smoothly enter the turning space with the minimum spiral pitch.
+    3. Speed Control and Result Validation: Optimized the turning path and calculated the speed of each handle to ensure the dragon's head did not exceed 2 m/s, meeting the safety requirements of the performance.
+    4. Team Collaboration and Code Implementation: Collaborated closely with team members to implement the models in code, validate the results, and submit a detailed competition paper.
+    
+    Key Achievements
+    
+    1. Skill Enhancement: Proficiency in equidistant spiral equations, collision detection algorithms, and path optimization modeling, significantly improving my mathematical modeling and programming skills.
+    2. Leadership and Teamwork: As the team leader, I honed my leadership and collaboration skills, effectively guiding the team through complex tasks.
+    3. Innovative Thinking: Developed innovative solutions for optimizing the turning path and speed control, enhancing my ability to tackle real-world problems.
+    4. Academic Contribution: Authored a comprehensive competition paper detailing our research process and findings, offering new insights into the mathematical modeling of traditional cultural activities.
