@@ -48,39 +48,40 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link active">Education</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link active" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- Education Section -->
                 <section id="education" class="section">
                     <div class="section-content">
-                        <h2>Academic Background</h2>
+                        <h2 data-i18n="academic-background">Academic Background</h2>
                         
                         <!-- Top Section: Transcripts and Overall -->
                         <div class="top-section">
                             <!-- Overall Performance -->
                             <div class="content-block overall-block">
-                                <h3>Overall</h3>
+                                <h3 data-i18n="overall">Overall</h3>
                                 <ul class="overall-stats" style="gap: 0.1rem;">
-                                    <li>Overall GPA: 3.73</li>
-                                    <li style="color: var(--text-secondary);">GPA of Compulsory Courses: 3.7</li>
-                                    <li>Weighted Average Mark: 88.31</li>
-                                    <li style="color: var(--text-secondary);">Weighted Average Mark of Compulsory Courses: 87.6</li>
-                                    <li>Earned Credits: 137</li>
-                                    <li style="color: var(--text-secondary);">Earned Compulsory Credits: 100</li>
+                                    <li><span data-i18n="overall-gpa">Overall GPA</span>: 3.73</li>
+                                    <li style="color: var(--text-secondary);"><span data-i18n="compulsory-gpa">GPA of Compulsory Courses</span>: 3.7</li>
+                                    <li><span data-i18n="weighted-avg">Weighted Average Mark</span>: 88.31</li>
+                                    <li style="color: var(--text-secondary);"><span data-i18n="compulsory-weighted">Weighted Average Mark of Compulsory Courses</span>: 87.6</li>
+                                    <li><span data-i18n="total-credits">Earned Credits</span>: 137</li>
+                                    <li style="color: var(--text-secondary);"><span data-i18n="compulsory-credits">Earned Compulsory Credits</span>: 100</li>
                                 </ul>
                             </div>
 
                             <!-- Transcripts Links -->
                             <div class="transcripts">
-                                <h3>Transcripts</h3>
+                                <h3 data-i18n="transcripts">Transcripts</h3>
                                 <div class="pdf-links">
                                     <a href="/Transcript/Official_Transcript_with_Grades.pdf" class="pdf-link" target="_blank">
                                         <i class="far fa-file-pdf"></i>
@@ -91,7 +92,7 @@
                                         Official Transcript (with Marks).pdf
                                     </a>
                                 </div>
-                                <h3>Certificate</h3>
+                                <h3 data-i18n="certificate">Certificate</h3>
                                 <div class="pdf-links">
                                     <a href="/Transcript/Certificate_of_Enrollment.pdf" class="pdf-link" target="_blank">
                                         <i class="far fa-file-pdf"></i>
@@ -102,7 +103,7 @@
 
                             <!-- English Proficiency -->
                             <div class="english-proficiency">
-                                <h3>English Proficiency</h3>
+                                <h3 data-i18n="english-proficiency">English Proficiency</h3>
                                 <div class="pdf-links">
                                     <div class="cert-item">
                                         <span class="cert-title">CET4(587) (2022.12)</span>
@@ -133,61 +134,61 @@
                         <div class="academic-years">
                             <!-- Freshman Year -->
                             <div class="content-block year-block">
-                                <h3><i class="fas fa-hourglass-start"></i> Freshman Year Performance</h3>
+                                <h3><i class="fas fa-hourglass-start"></i> <span data-i18n="freshman-year">Freshman Year Performance</span></h3>
                                 <div class="semester">
-                                    <h4>Fall term 2022~2023</h4>
-                                    <p>Earned Credits: <span>28.0</span> (Compulsory: <span>22.0</span>)</p>
+                                    <h4><span data-i18n="fall-term">Fall term</span> 2022~2023</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>28.0</span> (<span data-i18n="compulsory">Compulsory</span>: <span>22.0</span>)</p>
                                     <p>GPA: <span>3.69</span> (Compulsory: <span>3.72</span>)</p>
                                 </div>
                                 <div class="semester">
-                                    <h4>Spring term 2022~2023</h4>
-                                    <p>Earned Credits: <span>32.0</span> (Compulsory: <span>23.0</span>)</p>
+                                    <h4><span data-i18n="spring-term">Spring term</span> 2022~2023</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>32.0</span> (<span data-i18n="compulsory">Compulsory</span>: <span>23.0</span>)</p>
                                     <p>GPA: <span>3.64</span> (Compulsory: <span>3.53</span>)</p>
                                 </div>
                             </div>
 
                             <!-- Sophomore Year -->
                             <div class="content-block year-block">
-                                <h3><i class="fas fa-hourglass-half"></i> Sophomore Year Performance</h3>
+                                <h3><i class="fas fa-hourglass-half"></i> <span data-i18n="sophomore-year">Sophomore Year Performance</span></h3>
                                 <div class="semester">
-                                    <h4>Fall term 2023~2024</h4>
-                                    <p>Earned Credits: <span>28.0</span> (Compulsory: <span>28.0</span>)</p>
-                                    <p>GPA: <span>3.76</span> (Compulsory: <span>3.76</span>)</p>
+                                    <h4><span data-i18n="fall-term">Fall term</span> 2023~2024</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>28.0</span> (<span data-i18n="compulsory">Compulsory</span>: <span>28.0</span>)</p>
+                                    <p>GPA: <span>3.76</span> (<span data-i18n="compulsory">Compulsory</span>: <span>3.76</span>)</p>
                                 </div>
                                 <div class="semester">
-                                    <h4>Spring term 2023~2024</h4>
-                                    <p>Earned Credits: <span>33.0</span> (Compulsory: <span>17.0</span>)</p>
-                                    <p>GPA: <span>3.72</span> (Compulsory: <span>3.72</span>)</p>
+                                    <h4><span data-i18n="spring-term">Spring term</span> 2023~2024</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>33.0</span> (<span data-i18n="compulsory">Compulsory</span>: <span>17.0</span>)</p>
+                                    <p>GPA: <span>3.72</span> (<span data-i18n="compulsory">Compulsory</span>: <span>3.72</span>)</p>
                                 </div>
                             </div>
 
                             <!-- Junior Year -->
                             <div class="content-block year-block">
-                                <h3><i class="fas fa-lightbulb"></i> Junior Year Performance</h3>
+                                <h3><i class="fas fa-lightbulb"></i> <span data-i18n="junior-year">Junior Year Performance</span></h3>
                                 <div class="semester">
-                                    <h4>Fall term 2024~2025</h4>
-                                    <p>Earned Credits: <span>16.0</span> (Compulsory: <span>10.0</span>)</p>
-                                    <p>GPA: <span>3.93</span> (Compulsory: <span>3.88</span>)</p>
+                                    <h4><span data-i18n="fall-term">Fall term</span> 2024~2025</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>16.0</span> (<span data-i18n="compulsory">Compulsory</span>: <span>10.0</span>)</p>
+                                    <p>GPA: <span>3.93</span> (<span data-i18n="compulsory">Compulsory</span>: <span>3.88</span>)</p>
                                 </div>
                                 <div class="semester">
-                                    <h4>Spring term 2024~2025</h4>
-                                    <p>Earned Credits: <span>___</span> (Compulsory: <span>___</span>)</p>
-                                    <p>GPA: <span>___</span> (Compulsory: <span>___</span>)</p>
+                                    <h4><span data-i18n="spring-term">Spring term</span> 2024~2025</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
+                                    <p>GPA: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
                                 </div>
                             </div>
 
                             <!-- Senior Year -->
                             <div class="content-block year-block">
-                                <h3><i class="fas fa-graduation-cap"></i> Senior Year Performance</h3>
+                                <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="senior-year">Senior Year Performance</span></h3>
                                 <div class="semester">
-                                    <h4>Fall term 2025~2026</h4>
-                                    <p>Earned Credits: <span>___</span> (Compulsory: <span>___</span>)</p>
-                                    <p>GPA: <span>___</span> (Compulsory: <span>___</span>)</p>
+                                    <h4><span data-i18n="fall-term">Fall term</span> 2025~2026</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
+                                    <p>GPA: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
                                 </div>
                                 <div class="semester">
-                                    <h4>Spring term 2025~2026</h4>
-                                    <p>Earned Credits: <span>___</span> (Compulsory: <span>___</span>)</p>
-                                    <p>GPA: <span>___</span> (Compulsory: <span>___</span>)</p>
+                                    <h4><span data-i18n="spring-term">Spring term</span> 2025~2026</h4>
+                                    <p><span data-i18n="earned-credits">Earned Credits</span>: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
+                                    <p>GPA: <span>___</span> (<span data-i18n="compulsory">Compulsory</span>: <span>___</span>)</p>
                                 </div>
                             </div>
                         </div>
@@ -198,5 +199,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
-</html> 
+</html>

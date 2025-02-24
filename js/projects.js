@@ -1,153 +1,118 @@
-// Project details data
-const projectDetails = {
-    'night-market': {
-        title: 'Digital Night Market Economy Platform',
-        date: '2022-2023',
-        overview: 'A comprehensive IoT-based platform integrating night market management and digital solutions.',
-        background: 'Night markets are integral to Chinese culture, contributing to regional economics and tourism. This project addresses challenges in food safety, convenience, and management of street vending activities.',
-        features: [
-            'Real-time monitoring of vendor operations',
-            'AI-powered hygiene condition tracking',
-            'Integrated payment and ordering system',
-            'Tourist navigation and recommendation system'
-        ],
-        technologies: [
-            'Raspberry Pi & ESP32 for IoT devices',
-            'Huawei Cloud for data storage and processing',
-            'WeChat Mini Program for user interface',
-            'Python for backend development'
-        ],
-        impact: 'Enhanced operational efficiency and food safety standards in night markets while improving customer experience and vendor management.'
-    },
-    'sundial': {
-        title: 'Sundial Field Optimization Model',
-        date: '2023',
-        overview: 'Mathematical modeling project focusing on optimizing sundial field performance and layout.',
-        background: 'The project addresses the challenge of maximizing energy collection efficiency in solar power generation through precise sundial positioning and arrangement.',
-        features: [
-            'Universal physical model for single mirror optical geometry',
-            'Shadow and truncation efficiency calculations',
-            'Performance parameter analysis for entire fields',
-            'Layout optimization algorithms'
-        ],
-        technologies: [
-            'Mathematical modeling',
-            'Monte Carlo simulation',
-            'Ray tracing algorithms',
-            'Optimization techniques'
-        ],
-        impact: 'Contributed to the advancement of solar energy collection efficiency through innovative mathematical modeling and optimization approaches.'
-    },
-    'ionian': {
-        title: 'Ionian Sea Search & Rescue Model',
-        date: '2024',
-        overview: 'Development of search and rescue models for submersible operations in the Ionian Sea.',
-        background: 'Created in response to the growing need for efficient underwater search and rescue operations, incorporating complex environmental factors.',
-        features: [
-            'Environmental factor analysis',
-            'Search pattern optimization',
-            'Resource allocation modeling',
-            'Risk assessment framework'
-        ],
-        technologies: [
-            'Mathematical modeling',
-            'Optimization algorithms',
-            'Environmental data analysis',
-            'Simulation software'
-        ],
-        impact: 'Enhanced the efficiency and effectiveness of underwater search and rescue operations through systematic modeling and optimization.'
-    },
-    'port': {
-        title: 'Smart Port Scheduling System',
-        date: '2024',
-        overview: 'Intelligent scheduling system for optimizing port operations and resource management.',
-        background: 'Developed to address the increasing complexity of port operations and the need for efficient resource allocation.',
-        features: [
-            'Real-time vessel tracking',
-            'Resource allocation optimization',
-            'Predictive maintenance scheduling',
-            'Performance analytics dashboard'
-        ],
-        technologies: [
-            'Java Spring Boot for backend',
-            'Vue.js for frontend interface',
-            'PostgreSQL for data storage',
-            'Docker for containerization'
-        ],
-        impact: 'Significantly improved port operational efficiency and resource utilization through intelligent scheduling and management.'
-    },
-    'ai-assistant': {
-        title: 'AI Text-Image Assistant',
-        date: '2024',
-        overview: 'AI-powered application for text-image conversion and processing.',
-        background: 'Created to enhance content creation efficiency by leveraging advanced AI technologies for text and image processing.',
-        features: [
-            'Text-to-image generation',
-            'Image analysis and description',
-            'Content enhancement suggestions',
-            'Multi-modal content processing'
-        ],
-        technologies: [
-            'PyTorch for deep learning models',
-            'Transformers for NLP tasks',
-            'FastAPI for backend services',
-            'React for frontend interface'
-        ],
-        impact: 'Streamlined content creation processes and enhanced creative capabilities through AI-powered tools and features.'
+// Project details modal functionality
+const modal = document.getElementById('project-modal');
+const closeBtn = document.querySelector('.close-btn');
+const modalBody = document.querySelector('.modal-body');
+
+// Close modal when clicking the close button or outside the modal
+closeBtn.onclick = () => modal.style.display = "none";
+window.onclick = (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
     }
 };
 
-// Modal functionality
+// Function to load README content
+async function loadReadme(project) {
+    // 1. 根据当前语言选择README文件
+    const lang = currentLang === 'en' ? 'README.md' : 'README_zh.md';
+    // 添加基础路径配置
+    const basePath = './'; // 或者使用绝对路径 '/your-site-root/'
+    let readmePath;
+    
+    // 2. 根据项目确定README路径
+    switch(project) {
+        case 'vista':
+            readmePath = `my_projects_collect/VISTA-/${lang}`;
+            break;
+        case 'car-plate':
+            readmePath = `my_projects_collect/car_plate_detection-/${lang}`;
+            break;
+        case 'campus-trading':
+            readmePath = `my_projects_collect/Campus_used_product_trading_platform-/${lang}`;
+            break;
+        case 'math-model-2024':
+            readmePath = `my_projects_collect/2024CUMC-First-Prize-Provincial-Level-SolutionA-/${lang}`;
+            break;
+        case 'math-model-2023':
+            readmePath = `my_projects_collect/2023CUMC-Third-Prize-Provincial-Level-SolutionB-/${lang}`;
+            break;
+        case 'digital-night-market':
+            readmePath = `my_projects_collect/Digital-Night-Market-Platform-/${lang}`;
+            break;
+        case 'smart-port':
+            readmePath = `my_projects_collect/Huawei-Developer-Competition-2024-APAC-/${lang}`;
+            break;
+        case 'ai-assistant':
+            readmePath = `my_projects_collect/I2T-magic-coworker-/${lang}`;
+            break;
+        default:
+            return 'Project details not found.';
+    }
+
+    // 3. 获取README内容
+    try {
+        const fullPath = basePath + readmePath;
+        console.log('Loading README from:', fullPath);
+        const response = await fetch(fullPath);
+        if (!response.ok) throw new Error('Failed to load README');
+        const text = await response.text();
+        return text;
+    } catch (error) {
+        console.error('Error loading README:', error);
+        return 'Failed to load project details.';
+    }
+}
+
+// Handle project detail button clicks
 document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('project-modal');
-    const modalBody = modal.querySelector('.modal-body');
-    const closeBtn = modal.querySelector('.close-btn');
+    // ... 其他初始化代码 ...
 
-    // Close modal when clicking the close button
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-
-    // Close modal when clicking outside the modal content
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-
-    // Handle "View Details" button clicks
+    // Handle project detail button clicks
     document.querySelectorAll('.details-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const projectId = button.dataset.project;
-            const project = projectDetails[projectId];
+        button.addEventListener('click', async () => {
+            console.log('Button clicked!');
+            const project = button.getAttribute('data-project');
+            console.log('Project:', project);
             
-            if (project) {
-                const content = `
-                    <h3>${project.title}</h3>
-                    <p><strong>Period:</strong> ${project.date}</p>
-                    
-                    <h4>Overview</h4>
-                    <p>${project.overview}</p>
-                    
-                    <h4>Background</h4>
-                    <p>${project.background}</p>
-                    
-                    <h4>Key Features</h4>
-                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
-                        
-                    <h4>Technologies Used</h4>
-                    ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
-                    
-                    <h4>Impact</h4>
-                    <p>${project.impact}</p>
+            modalBody.innerHTML = '<div class="loading">Loading...</div>';
+            modal.style.display = "block";
+            
+            try {
+                const content = await loadReadme(project);
+                // 使用 marked 将 Markdown 转换为 HTML
+                const htmlContent = marked.parse(content);
+                // 添加样式容器
+                modalBody.innerHTML = `
+                    <div class="markdown-content">
+                        ${htmlContent}
+                    </div>
                 `;
-                
-                modalBody.innerHTML = content;
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden';
+            } catch (error) {
+                console.error('Error:', error);
+                modalBody.innerHTML = 'Failed to load project details.';
             }
         });
     });
+});
+
+// Update project content based on current language
+function updateProjectContent() {
+    document.querySelectorAll('[data-i18n-project]').forEach(element => {
+        const [project, field] = element.getAttribute('data-i18n-project').split('.');
+        if (translations[currentLang]['project-items'][project] && 
+            translations[currentLang]['project-items'][project][field]) {
+            element.textContent = translations[currentLang]['project-items'][project][field];
+        }
+    });
+}
+
+// Add project content update to the language switch function
+document.addEventListener('DOMContentLoaded', () => {
+    updateProjectContent();
+    // Update content when language changes
+    const originalUpdateContent = window.updateContent;
+    window.updateContent = function() {
+        originalUpdateContent();
+        updateProjectContent();
+    };
 });

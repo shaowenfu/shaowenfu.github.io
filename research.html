@@ -48,29 +48,30 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="research.html" class="nav-link active">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link active" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- Research Section -->
                 <section id="research" class="section">
                     <div class="section-content">
-                        <h2>Research Journey</h2>
+                        <h2 data-i18n="research-journey">Research Journey</h2>
 
                         <!-- Current Status Card -->
                         <div class="research-card">
                             <div class="card-header">
                                 <i class="fas fa-clock"></i>
-                                <h3>Current Status</h3>
+                                <h3 data-i18n="current-status">Current Status</h3>
                             </div>
                             <div class="card-content">
-                                <p>I am currently a junior undergraduate student at Sichuan University, participating in 
+                                <p data-i18n="current-status-content">I am currently a junior undergraduate student at Sichuan University, participating in 
                                    Professor Peng Hu's laboratory meetings since February 2024. While I'm still at the beginning 
                                    of my research journey, this experience has been instrumental in shaping my understanding 
                                    of academic research and future aspirations.</p>
@@ -81,10 +82,10 @@
                         <div class="research-card">
                             <div class="card-header">
                                 <i class="fas fa-lightbulb"></i>
-                                <h3>Why Research?</h3>
+                                <h3 data-i18n="why-research">Why Research?</h3>
                             </div>
                             <div class="card-content">
-                                <p>My journey in computer science began with a simple yet profound desire: to create something 
+                                <p data-i18n="why-research-content">My journey in computer science began with a simple yet profound desire: to create something 
                                    meaningful that could make a difference in the world. As I delved deeper into my studies, 
                                    I found myself increasingly drawn to the uncertainty and challenges that research presents. 
                                    The possibility of contributing to the advancement of knowledge, no matter how small, 
@@ -96,25 +97,25 @@
                         <div class="research-card">
                             <div class="card-header">
                                 <i class="fas fa-compass"></i>
-                                <h3>Current Learning & Exploration</h3>
+                                <h3 data-i18n="current-learning">Current Learning & Exploration</h3>
                             </div>
                             <div class="research-interests-grid">
                                 <div class="interest-item">
                                     <i class="fas fa-network-wired"></i>
                                     <div class="interest-content">
-                                        <h4>Multimodal Learning</h4>
+                                        <h4 data-i18n-area="multimodal">Multimodal Learning</h4>
                                    </div>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
                                     <div class="interest-content">
-                                        <h4>Generative AI</h4>
+                                        <h4 data-i18n-area="generative">Generative AI</h4>
                                     </div>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-robot"></i>
                                     <div class="interest-content">
-                                        <h4>Embodied Intelligence</h4>
+                                        <h4 data-i18n-area="embodied">Embodied Intelligence</h4>
                                     </div>
                                 </div>
                             </div>
@@ -124,28 +125,28 @@
                         <div class="research-card">
                             <div class="card-header">
                                 <i class="fas fa-chart-line"></i>
-                                <h3>Current Progress</h3>
+                                <h3 data-i18n="current-progress">Current Progress</h3>
                             </div>
                             <div class="progress-timeline">
                                 <div class="timeline-item">
                                     <i class="fas fa-book-reader"></i>
                                     <div class="timeline-content">
-                                        <h4>Learning Stage</h4>
-                                        <p>Currently focused on reading papers and understanding fundamental concepts in my areas of interest.</p>
+                                        <h4 data-i18n="learning-stage">Learning Stage</h4>
+                                        <p data-i18n="learning-stage-content">Currently focused on reading papers and understanding fundamental concepts in my areas of interest.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
                                     <i class="fas fa-search"></i>
                                     <div class="timeline-content">
-                                        <h4>Direction Finding</h4>
-                                        <p>Actively participating in lab meetings and discussions about multimodal retrieval while exploring various research directions.</p>
+                                        <h4 data-i18n="direction-finding">Direction Finding</h4>
+                                        <p data-i18n="direction-finding-content">Actively participating in lab meetings and discussions about multimodal retrieval while exploring various research directions.</p>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
                                     <i class="fas fa-plane"></i>
                                     <div class="timeline-content">
-                                        <h4>Future Plans</h4>
-                                        <p>Seeking summer research and internship opportunities to enhance my research skills and experience, preparing for further studies in the field of AI and Computer Science.</p>
+                                        <h4 data-i18n="future-plans">Future Plans</h4>
+                                        <p data-i18n="future-plans-content">Seeking summer research and internship opportunities to enhance my research skills and experience, preparing for further studies in the field of AI and Computer Science.</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,24 +156,24 @@
                         <div class="research-card">
                             <div class="card-header">
                                 <i class="fas fa-flask"></i>
-                                <h3>Lab Experience</h3>
+                                <h3 data-i18n="lab-experience">Lab Experience</h3>
                             </div>
                             <div class="lab-content">
-                                <h4>Multi-modal Learning Research</h4>
-                                <p class="subtitle">Peng Hu's Laboratory, Sichuan University</p>
-                                <p class="date">February 2024 – Present</p>
+                                <h4 data-i18n="lab-title">Multi-modal Learning Research</h4>
+                                <p class="subtitle" data-i18n="lab-subtitle">Peng Hu's Laboratory, Sichuan University</p>
+                                <p class="date" data-i18n="lab-date">February 2024 – Present</p>
                                 <div class="activities-list">
                                     <div class="activity-item">
                                         <i class="fas fa-tasks"></i>
-                                        <span>Participating in regular research discussions and paper readings</span>
+                                        <span data-i18n-lab="discussions">Participating in regular research discussions and paper readings</span>
                                     </div>
                                     <div class="activity-item">
                                         <i class="fas fa-code"></i>
-                                        <span>Learning to implement and test various multi-modal learning models</span>
+                                        <span data-i18n-lab="implementation">Learning to implement and test various multi-modal learning models</span>
                                     </div>
                                     <div class="activity-item">
                                         <i class="fas fa-users"></i>
-                                        <span>Collaborating with team members and learning from senior researchers</span>
+                                        <span data-i18n-lab="collaboration">Collaborating with team members and learning from senior researchers</span>
                                     </div>
                                 </div>
                             </div>
@@ -184,5 +185,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
-</html> 
+</html>

@@ -48,20 +48,21 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- About Section -->
                 <section id="about" class="section">
                     <div class="section-content">
-                        <h2>About Me</h2>
+                        <h2 data-i18n="about-me">About Me</h2>
                         
                         <!-- Personal Info Cards -->
                         <div class="info-cards">
@@ -69,13 +70,13 @@
                             <div class="info-card">
                                 <div class="card-header">
                                     <i class="fas fa-user"></i>
-                                    <h3>Basic Information</h3>
+                                    <h3 data-i18n="basic-info">Basic Information</h3>
                                 </div>
                                 <ul class="info-list">
-                                    <li><i class="fas fa-graduation-cap"></i> Junior at SiChuan University</li>
-                                    <li><i class="fas fa-code"></i> Computer Science and Technology</li>
-                                    <li><i class="fas fa-calendar-alt"></i> Class of 2022</li>
-                                    <li><i class="fas fa-user-graduate"></i> Administrative Class 1</li>
+                                    <li><i class="fas fa-graduation-cap"></i> <span data-i18n-info="junior">Junior at SiChuan University</span></li>
+                                    <li><i class="fas fa-code"></i> <span data-i18n-info="major">Computer Science and Technology</span></li>
+                                    <li><i class="fas fa-calendar-alt"></i> <span data-i18n-info="class">Class of 2022</span></li>
+                                    <li><i class="fas fa-user-graduate"></i> <span data-i18n-info="admin-class">Administrative Class 1</span></li>
                                 </ul>
                             </div>
 
@@ -83,13 +84,13 @@
                             <div class="info-card">
                                 <div class="card-header">
                                     <i class="fas fa-id-card"></i>
-                                    <h3>Personal Details</h3>
+                                    <h3 data-i18n="personal-details">Personal Details</h3>
                                 </div>
                                 <ul class="info-list">
-                                    <li><i class="fas fa-venus-mars"></i> Male</li>
-                                    <li><i class="fas fa-flag"></i> Chinese (Han)</li>
-                                    <li><i class="fas fa-birthday-cake"></i> July 14, 2004</li>
-                                    <li><i class="fas fa-map-marker-alt"></i> Yongzhou, Hunan, China</li>
+                                    <li><i class="fas fa-venus-mars"></i> <span data-i18n-details="gender">Male</span></li>
+                                    <li><i class="fas fa-flag"></i> <span data-i18n-details="ethnicity">Chinese (Han)</span></li>
+                                    <li><i class="fas fa-birthday-cake"></i> <span data-i18n-details="birthday">July 14, 2004</span></li>
+                                    <li><i class="fas fa-map-marker-alt"></i> <span data-i18n-details="location">Yongzhou, Hunan, China</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -98,17 +99,17 @@
                         <div class="story-section">
                             <div class="story-header">
                                 <i class="fas fa-quote-left"></i>
-                                <h3>My Journey</h3>
+                                <h3 data-i18n="my-journey">My Journey</h3>
                             </div>
                             <div class="story-content">
-                                <p>For the past two and a half years, I have been immersed in the study of Computer Science, 
+                                <p data-i18n-journey="0">For the past two and a half years, I have been immersed in the study of Computer Science, 
                                    a field that continues to captivate and intrigue me. My participation in numerous competitions 
                                    has been instrumental, providing invaluable experiences that have not only honed my research 
                                    abilities but also deepened my comprehension of the discipline.</p>
-                                <p>A year ago, under the guidance of my mentor, I began to concentrate my efforts on multi-modal learning, 
+                                <p data-i18n-journey="1">A year ago, under the guidance of my mentor, I began to concentrate my efforts on multi-modal learning, 
                                    a domain that has allowed me to make significant strides and absorb a wealth of knowledge. Currently, 
                                    I am actively seeking additional opportunities that can offer fresh insights and diverse experiences.</p>
-                                <p>I approach this educational journey with unbridled passion and a steadfast conviction that my future 
+                                <p data-i18n-journey="2">I approach this educational journey with unbridled passion and a steadfast conviction that my future 
                                    endeavors will yield remarkable achievements.</p>
                             </div>
                         </div>
@@ -117,32 +118,32 @@
                         <div class="interests-section">
                             <div class="interests-header">
                                 <i class="fas fa-microscope"></i>
-                                <h3>Research Interests</h3>
+                                <h3 data-i18n="research-interests">Research Interests</h3>
                             </div>
                             <div class="interests-grid">
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Multi-modal Learning</span>
+                                    <span data-i18n-interest="0">Multi-modal Learning</span>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Artificial intelligence</span>
+                                    <span data-i18n-interest="1">Artificial intelligence</span>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Computer vision</span>
+                                    <span data-i18n-interest="2">Computer vision</span>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Machine Learning</span>
+                                    <span data-i18n-interest="3">Machine Learning</span>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Multimodal AI Systems</span>
+                                    <span data-i18n-interest="4">Multimodal AI Systems</span>
                                 </div>
                                 <div class="interest-item">
                                     <i class="fas fa-brain"></i>
-                                    <span>Embodied Intelligence</span>
+                                    <span data-i18n-interest="5">Embodied Intelligence</span>
                                 </div>  
                             </div>
                         </div>
@@ -232,5 +233,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

@@ -48,102 +48,139 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link active" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- Projects Section -->
                 <section id="projects" class="section">
                     <div class="section-content">
-                        <h2>Projects</h2>
+                        <h2 data-i18n="projects-title">Projects</h2>
                         <div class="project-grid">
-                            <!-- Digital Night Market Project -->
-                            <div class="project-card">
+                            <!-- VISTA Project -->
+                            <div class="project-card" data-project="vista">
                                 <div class="project-header">
-                                    <h3>Digital Night Market Economy Platform</h3>
-                                    <span class="project-date">2022-2023</span>
+                                    <h3 data-i18n-project="vista.title"></h3>
+                                    <span class="project-date" data-i18n-project="vista.date"></span>
                                 </div>
-                                <p class="project-description">
-                                    A comprehensive IoT-based platform for night market management, integrating consumer experience, vendor operations, and government oversight.
-                                </p>
+                                <p class="project-description" data-i18n-project="vista.description"></p>
                                 <div class="project-footer">
-                                    <a href="https://github.com/shaowenfu/Digital-Night-Market-Economy-Integrated-Platform--UI-design-for-boothowners.git" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Code
+                                    <a href="https://github.com/shaowenfu/VISTA" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
                                     </a>
-                                    <button class="details-btn" data-project="night-market">View Details</button>
+                                    <button class="details-btn" data-project="vista" data-i18n="view-details">View Details</button>
                                 </div>
                             </div>
 
-                            <!-- Mathematical Modeling Project -->
-                            <div class="project-card">
+                            <!-- Car Plate Detection Project -->
+                            <div class="project-card" data-project="car-plate">
                                 <div class="project-header">
-                                    <h3>Sundial Field Optimization Model</h3>
-                                    <span class="project-date">2023</span>
+                                    <h3 data-i18n-project="car-plate.title"></h3>
+                                    <span class="project-date" data-i18n-project="car-plate.date"></span>
                                 </div>
-                                <p class="project-description">
-                                    Developed mathematical models for optimizing sundial field performance, including optical efficiency analysis and layout optimization.
-                                </p>
+                                <p class="project-description" data-i18n-project="car-plate.description"></p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/shaowenfu/car_plate_detection" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
+                                    </a>
+                                    <button class="details-btn" data-project="car-plate" data-i18n="view-details">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Campus Trading Platform -->
+                            <div class="project-card" data-project="campus-trading">
+                                <div class="project-header">
+                                    <h3 data-i18n-project="campus-trading.title"></h3>
+                                    <span class="project-date" data-i18n-project="campus-trading.date"></span>
+                                </div>
+                                <p class="project-description" data-i18n-project="campus-trading.description"></p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/shaowenfu/Campus_used_product_trading_platform" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
+                                    </a>
+                                    <button class="details-btn" data-project="campus-trading" data-i18n="view-details">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Mathematical Modeling 2024 -->
+                            <div class="project-card" data-project="math-model-2024">
+                                <div class="project-header">
+                                    <h3 data-i18n-project="math-model-2024.title"></h3>
+                                    <span class="project-date" data-i18n-project="math-model-2024.date"></span>
+                                </div>
+                                <p class="project-description" data-i18n-project="math-model-2024.description"></p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/shaowenfu/2024CUMC-First-Prize-Provincial-Level-SolutionA" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
+                                    </a>
+                                    <button class="details-btn" data-project="math-model-2024" data-i18n="view-details">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Mathematical Modeling 2023 -->
+                            <div class="project-card" data-project="math-model-2023">
+                                <div class="project-header">
+                                    <h3 data-i18n-project="math-model-2023.title"></h3>
+                                    <span class="project-date" data-i18n-project="math-model-2023.date"></span>
+                                </div>
+                                <p class="project-description" data-i18n-project="math-model-2023.description"></p>
                                 <div class="project-footer">
                                     <a href="https://github.com/shaowenfu/2023CUMC-Third-Prize-Provincial-Level-SolutionB" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Code
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
                                     </a>
-                                    <button class="details-btn" data-project="sundial">View Details</button>
+                                    <button class="details-btn" data-project="math-model-2023" data-i18n="view-details">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Digital Night Market Project -->
+                            <div class="project-card" data-project="digital-night-market">
+                                <div class="project-header">
+                                    <h3 data-i18n-project="digital-night-market.title"></h3>
+                                    <span class="project-date" data-i18n-project="digital-night-market.date"></span>
+                                </div>
+                                <p class="project-description" data-i18n-project="digital-night-market.description"></p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/shaowenfu/Digital-Night-Market-Platform" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
+                                    </a>
+                                    <button class="details-btn" data-project="digital-night-market" data-i18n="view-details">View Details</button>
                                 </div>
                             </div>
 
                             <!-- Smart Port Project -->
-                            <div class="project-card">
+                            <div class="project-card" data-project="smart-port">
                                 <div class="project-header">
-                                    <h3>Smart Port Scheduling System</h3>
-                                    <span class="project-date">2024</span>
+                                    <h3 data-i18n-project="smart-port.title"></h3>
+                                    <span class="project-date" data-i18n-project="smart-port.date"></span>
                                 </div>
-                                <p class="project-description">
-                                    Intelligent scheduling system for port operations, optimizing resource allocation and improving operational efficiency.
-                                </p>
+                                <p class="project-description" data-i18n-project="smart-port.description"></p>
                                 <div class="project-footer">
-                                    <a href="https://github.com/shaowenfu/Huawei-Developer-Competition-2024-APAC.git" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Code
+                                    <a href="https://github.com/shaowenfu/Huawei-Developer-Competition-2024-APAC" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
                                     </a>
-                                    <button class="details-btn" data-project="port">View Details</button>
+                                    <button class="details-btn" data-project="smart-port" data-i18n="view-details">View Details</button>
                                 </div>
                             </div>
 
                             <!-- AI Assistant Project -->
-                            <div class="project-card">
+                            <div class="project-card" data-project="ai-assistant">
                                 <div class="project-header">
-                                    <h3>AI Text-Image Assistant</h3>
-                                    <span class="project-date">2024</span>
+                                    <h3 data-i18n-project="ai-assistant.title"></h3>
+                                    <span class="project-date" data-i18n-project="ai-assistant.date"></span>
                                 </div>
-                                <p class="project-description">
-                                    Developed an AI-powered application for text-image conversion and processing, enhancing content creation efficiency.
-                                </p>
+                                <p class="project-description" data-i18n-project="ai-assistant.description"></p>
                                 <div class="project-footer">
                                     <a href="https://github.com/shaowenfu/I2T-magic-coworker" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Code
+                                        <i class="fab fa-github"></i> <span data-i18n="view-code">View Code</span>
                                     </a>
-                                    <button class="details-btn" data-project="ai-assistant">View Details</button>
-                                </div>
-                            </div>
-                            <!-- Ionian Sea Project -->
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <h3>Ionian Sea Search & Rescue Model</h3>
-                                    <span class="project-date">2024</span>
-                                </div>
-                                <p class="project-description">
-                                    Developed search and rescue models for submersible operations in the Ionian Sea, incorporating environmental factors and optimization algorithms.
-                                </p>
-                                <div class="project-footer">
-                                    <a href="https://github.com/shaowenfu/Ionian-Sea-Search-and-Rescue-Model.git" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Code
-                                    </a>
-                                    <button class="details-btn" data-project="ionian">View Details</button>
+                                    <button class="details-btn" data-project="ai-assistant" data-i18n="view-details">View Details</button>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +200,10 @@
         </div>
     </div>
 
+    <!-- 在其他脚本之前添加 marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
     <script src="js/projects.js"></script>
 </body>
 </html>

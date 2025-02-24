@@ -48,39 +48,40 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link active">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link active" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- Achievements Section -->
                 <section id="achievements" class="section">
                     <div class="section-content">
-                        <h2>Achievements & Awards</h2>
+                        <h2 data-i18n="achievements-title">Achievements & Awards</h2>
                         <div class="content-block">
                             <div class="achievement-item">
-                                <h3>Academic Achievements</h3>
+                                <h3 data-i18n="academic-achievements">Academic Achievements</h3>
                                 <ul>
-                                    <li>First Prize, 2024 China Undergraduate Mathematical Contest in Modeling (Provincial Level)</li>
-                                    <li>Second Prize, 14th Blue Bridge Cup Software Competition (University Group A)</li>
-                                    <li>First Prize, 2023 National College Internet of Things Design Competition (Central & Southwest China Region)</li>
-                                    <li>Second Prize, 2023 National College Internet of Things Design Competition (National Finals)</li>
-                                    <li>Third Prize, 2023 China Undergraduate Mathematical Contest in Modeling (Provincial Level)</li>
-                                    <li>Second Prize, 2023 Sichuan University Comprehensive Competition</li>
-                                    <li>Outstanding Student, Sichuan University, 2023</li>
+                                    <li data-i18n-achievement="0">First Prize, 2024 China Undergraduate Mathematical Contest in Modeling (Provincial Level)</li>
+                                    <li data-i18n-achievement="1">Second Prize, 14th Blue Bridge Cup Software Competition (University Group A)</li>
+                                    <li data-i18n-achievement="2">First Prize, 2023 National College Internet of Things Design Competition (Central & Southwest China Region)</li>
+                                    <li data-i18n-achievement="3">Second Prize, 2023 National College Internet of Things Design Competition (National Finals)</li>
+                                    <li data-i18n-achievement="4">Third Prize, 2023 China Undergraduate Mathematical Contest in Modeling (Provincial Level)</li>
+                                    <li data-i18n-achievement="5">Second Prize, 2023 Sichuan University Comprehensive Competition</li>
+                                    <li data-i18n-achievement="6">Outstanding Student, Sichuan University, 2023</li>
                                 </ul>
                             </div>
                             <div class="achievement-item">
-                                <h3>Certificates</h3>
+                                <h3 data-i18n="certificates-title">Certificates</h3>
                                 <ul>
-                                    <li>CET4: 587 (2022.12)</li>
-                                    <li>CET6: 566 (2023.6)</li>
-                                    <li>IELTS: 7.0 (2024.8.20)</li>
+                                    <li data-i18n-certificate="0">CET4: 587 (2022.12)</li>
+                                    <li data-i18n-certificate="1">CET6: 566 (2023.6)</li>
+                                    <li data-i18n-certificate="2">IELTS: 7.0 (2024.8.20)</li>
                                 </ul>
                             </div>
                         </div>
@@ -91,5 +92,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
-</html> 
+</html>

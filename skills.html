@@ -47,73 +47,74 @@
             <!-- Top Navigation -->
             <nav class="content-nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="research.html" class="nav-link">Research</a></li>
-                    <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                    <li><a href="education.html" class="nav-link" data-i18n="nav-education">Education</a></li>
+                    <li><a href="research.html" class="nav-link" data-i18n="nav-research">Research</a></li>
+                    <li><a href="achievements.html" class="nav-link" data-i18n="nav-achievements">Achievements</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link active" data-i18n="nav-skills">Skills</a></li>
                 </ul>
+                <button class="language-switch" onclick="switchLanguage()">中文</button>
             </nav>
 
             <div class="sections-container">
                 <!-- Skills Section -->
                 <section id="skills" class="section">
                     <div class="section-content">
-                        <h2>Skills & Interests</h2>
+                        <h2 data-i18n="skills-title">Skills & Interests</h2>
                         <div class="content-block">
                             <div class="skills-category">
-                                <h3>Programming Languages</h3>
+                                <h3 data-i18n="programming-languages">Programming Languages</h3>
                                 <ul>
-                                    <li>Python (Advanced)</li>
-                                    <li>C/C++ (Advanced)</li>
-                                    <li>Java (Intermediate)</li>
-                                    <li>JavaScript (Intermediate)</li>
-                                    <li>SQL (Intermediate)</li>
+                                    <li data-i18n-programming="0">Python (Advanced)</li>
+                                    <li data-i18n-programming="1">C/C++ (Advanced)</li>
+                                    <li data-i18n-programming="2">Java (Intermediate)</li>
+                                    <li data-i18n-programming="3">JavaScript (Intermediate)</li>
+                                    <li data-i18n-programming="4">SQL (Intermediate)</li>
                                 </ul>
                             </div>
 
                             <div class="skills-category">
-                                <h3>Frameworks & Tools</h3>
+                                <h3 data-i18n="frameworks-tools">Frameworks & Tools</h3>
                                 <ul>
-                                    <li>PyTorch & TensorFlow</li>
-                                    <li>Spring Boot</li>
-                                    <li>React & Vue.js</li>
-                                    <li>Docker & Kubernetes</li>
-                                    <li>Git & GitHub</li>
+                                    <li data-i18n-framework="0">PyTorch & TensorFlow</li>
+                                    <li data-i18n-framework="1">Spring Boot</li>
+                                    <li data-i18n-framework="2">React & Vue.js</li>
+                                    <li data-i18n-framework="3">Docker & Kubernetes</li>
+                                    <li data-i18n-framework="4">Git & GitHub</li>
                                 </ul>
                             </div>
 
                             <div class="skills-category">
-                                <h3>Research Skills</h3>
+                                <h3 data-i18n="research-skills">Research Skills</h3>
                                 <ul>
-                                    <li>Machine Learning & Deep Learning</li>
-                                    <li>Multi-modal Learning</li>
-                                    <li>Computer Vision</li>
-                                    <li>Natural Language Processing</li>
-                                    <li>Data Analysis & Visualization</li>
+                                    <li data-i18n-research="0">Machine Learning & Deep Learning</li>
+                                    <li data-i18n-research="1">Multi-modal Learning</li>
+                                    <li data-i18n-research="2">Computer Vision</li>
+                                    <li data-i18n-research="3">Natural Language Processing</li>
+                                    <li data-i18n-research="4">Data Analysis & Visualization</li>
                                 </ul>
                             </div>
 
                             <div class="skills-category">
-                                <h3>Soft Skills</h3>
+                                <h3 data-i18n="soft-skills">Soft Skills</h3>
                                 <ul>
-                                    <li>Problem Solving</li>
-                                    <li>Team Collaboration</li>
-                                    <li>Technical Writing</li>
-                                    <li>Project Management</li>
-                                    <li>Research Methodology</li>
+                                    <li data-i18n-soft="0">Problem Solving</li>
+                                    <li data-i18n-soft="1">Team Collaboration</li>
+                                    <li data-i18n-soft="2">Technical Writing</li>
+                                    <li data-i18n-soft="3">Project Management</li>
+                                    <li data-i18n-soft="4">Research Methodology</li>
                                 </ul>
                             </div>
 
                             <div class="skills-category">
-                                <h3>Interests</h3>
+                                <h3 data-i18n="interests">Interests</h3>
                                 <ul>
-                                    <li>Artificial Intelligence</li>
-                                    <li>IoT Development</li>
-                                    <li>Full-stack Development</li>
-                                    <li>Algorithm Design</li>
-                                    <li>System Architecture</li>
+                                    <li data-i18n-interests="0">Artificial Intelligence</li>
+                                    <li data-i18n-interests="1">IoT Development</li>
+                                    <li data-i18n-interests="2">Full-stack Development</li>
+                                    <li data-i18n-interests="3">Algorithm Design</li>
+                                    <li data-i18n-interests="4">System Architecture</li>
                                 </ul>
                             </div>
                         </div>
@@ -124,5 +125,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 </body>
-</html> 
+</html>
