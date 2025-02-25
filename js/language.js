@@ -82,7 +82,8 @@ const translations = {
         'research-areas': {
             'multimodal': 'Multimodal Learning',
             'generative': 'Generative AI',
-            'embodied': 'Embodied Intelligence'
+            'embodied': 'Embodied Intelligence',
+            'hci': 'Human-Computer Interaction'
         },
         'current-progress': 'Current Progress',
         'learning-stage': 'Learning Stage',
@@ -151,15 +152,18 @@ const translations = {
             'location': 'Yongzhou, Hunan, China'
         },
         'journey-content': [
-            'For the past two and a half years, I have been immersed in the study of Computer Science, a field that continues to captivate and intrigue me. My participation in numerous competitions has been instrumental, providing invaluable experiences that have not only honed my research abilities but also deepened my comprehension of the discipline.',
-            'A year ago, under the guidance of my mentor, I began to concentrate my efforts on multi-modal learning, a domain that has allowed me to make significant strides and absorb a wealth of knowledge. Currently, I am actively seeking additional opportunities that can offer fresh insights and diverse experiences.',
-            'I approach this educational journey with unbridled passion and a steadfast conviction that my future endeavors will yield remarkable achievements.'
+            'I\'m a junior computer science student who found his calling in AI research. While my journey began with simple coding assignments, each project and competition gradually revealed to me the profound impact technology can have on people\'s lives. This realization has deeply shaped my aspirations.',
+            
+            'Currently, I\'m at a pivotal point in my academic journey. The field of AI, particularly multi-modal learning, has captured my imagination, though I often feel both excited and overwhelmed by its vast scope. Under my mentor\'s guidance, I\'m learning to navigate this complexity, balancing my enthusiasm with the humbling recognition of how much there is to learn.',
+            
+            'Looking ahead, I\'m both anxious and hopeful. The path in research isn\'t always clear, and the challenges can seem daunting. Yet, it\'s precisely these challenges that drive me forward. I\'m committed to this journey, not because I believe I\'m exceptional, but because I believe in the power of persistent effort and genuine curiosity to make meaningful contributions, however modest they may be.'
         ],
         'research-interests-items': [
             'Multi-modal Learning',
             'Artificial intelligence',
             'Computer vision',
             'Machine Learning',
+            'Human-Computer Interaction',
             'Multimodal AI Systems',
             'Embodied Intelligence'
         ],
@@ -265,7 +269,79 @@ const translations = {
         'problem-solving': 'Problem Solving & Innovation',
         'problem-1': 'Analytical Thinking: Applied mathematical modeling to solve complex problems in competitions and real-world projects',
         'problem-2': 'Creative Solutions: Developed innovative approaches for VISTA\'s multimodal system and I2T Magic\'s AI features',
-        'problem-3': 'Research Methodology: Conducted systematic research and analysis for algorithm optimization and system improvements'
+        'problem-3': 'Research Methodology: Conducted systematic research and analysis for algorithm optimization and system improvements',
+        'career-positioning': 'Career Positioning',
+        'career-items': {
+            'ai-engineer': {
+                'title': 'AI Engineer',
+                'description': 'Specialized in multimodal AI systems development (VISTA, I2T Magic) with computer vision and NLP integration.',
+                'tags': ['VISTA', 'I2T Magic', 'License Plate Detection'],
+                'skills': [
+                    'Computer Vision & NLP Integration',
+                    'PyTorch & TensorFlow Development',
+                    'Model Optimization & Deployment'
+                ]
+            },
+            'fullstack': {
+                'title': 'Full Stack Developer',
+                'description': 'Built end-to-end applications including VISTA (Flutter/FastAPI) and Campus Trading Platform (Spring Boot/Vue.js).',
+                'tags': ['Campus Trading Platform', 'Digital Night Market', 'Smart Port System'],
+                'skills': [
+                    'Flutter & Vue.js Frontend',
+                    'Spring Boot & FastAPI Backend',
+                    'Microservices Architecture'
+                ]
+            },
+            'data-scientist': {
+                'title': 'Data Scientist',
+                'description': 'Applied data analysis in mathematical modeling competitions (CUMCM) and AI-driven analytics projects.',
+                'tags': ['CUMCM Awards', 'Spiral Motion Model', 'Solar Mirror Optimization'],
+                'skills': [
+                    'Mathematical Modeling',
+                    'Data Analysis & Visualization',
+                    'Algorithm Optimization'
+                ]
+            }
+        },
+        // Lab Introduction
+        'lab-intro-title': 'Lab Introduction',
+        'lab-intro-content': "Professor Peng Hu's laboratory focuses on multimodal AI technology research, committed to advancing AI technology applications in healthcare, education, transportation, and other fields. Through interdisciplinary research methods, the laboratory explores multimodal data fusion and understanding by combining deep learning, computer vision, and natural language processing technologies to solve complex real-world problems.",
+        
+        // Research Project
+        'research-project-title': 'Research Project',
+        'project-name': 'Project: Cross-modal Retrieval Research under Multi-label Noise',
+        'project-background-title': 'Project Background',
+        'project-background-content': 'In multimodal data, label noise is a common problem, especially in the annotation process of large-scale datasets. Noisy labels affect model training effectiveness and retrieval performance. Therefore, studying how to improve the robustness and accuracy of cross-modal retrieval under multi-label noise has important theoretical and practical significance.',
+        
+        'research-objectives-title': 'Research Objectives',
+        'objective-1': 'Explore the generation mechanism and characteristics of multi-label noise, design reasonable noise models.',
+        'objective-2': 'Study how to improve the robustness of cross-modal retrieval models in multi-label noise environments.',
+        'objective-3': 'Propose effective noise processing methods to reduce the impact of noise on retrieval performance.',
+        
+        'research-methods-title': 'Research Methods',
+        'method-1': 'Noise Model Design: Design various noise generation methods through analysis of existing literature and datasets.',
+        'method-2': 'Model Optimization: Optimize cross-modal retrieval model architecture to better adapt to noisy environments.',
+        'method-3': 'Experimental Evaluation: Conduct experiments on multiple standard datasets to evaluate model performance.',
+        
+        'project-progress-title': 'Project Progress',
+        'progress-1': 'Completed noise model design and preliminary experiments.',
+        'progress-2': 'Currently optimizing model architecture to improve performance under high noise rates.',
+        'progress-3': 'Responsible for noise model design, experimental design, and data analysis.',
+        
+        // Research Skills
+        'research-skills-title': 'Research Skills & Capabilities',
+        'skill-1-title': 'Deep Learning & Model Optimization',
+        'skill-1-content': 'Proficient in deep learning frameworks (PyTorch, TensorFlow), capable of designing and optimizing complex neural network architectures.',
+        'skill-2-title': 'Data Processing & Analysis',
+        'skill-2-content': 'Strong data processing capabilities, efficient handling of large-scale multimodal datasets using Python, NumPy, Pandas.',
+        'skill-3-title': 'Noise Modeling & Processing',
+        'skill-3-content': 'In-depth study of multi-label noise generation mechanisms, design and implementation of various noise models.',
+        
+        // Future Outlook
+        'future-outlook-title': 'Future Outlook',
+        'future-plan-1': 'Further research on noise processing methods to improve model performance in complex noise environments.',
+        'future-plan-2': 'Expand research scope to other multimodal tasks such as classification and generation.',
+        'future-plan-3': 'Actively participate in international academic conferences and collaboration projects.'
     },
     zh: {
         // Navigation
@@ -346,7 +422,8 @@ const translations = {
         'research-areas': {
             'multimodal': '多模态学习',
             'generative': '生成式人工智能',
-            'embodied': '具身智能'
+            'embodied': '具身智能',
+            'hci': '人机交互'
         },
         'current-progress': '当前进展',
         'learning-stage': '学习阶段',
@@ -415,15 +492,18 @@ const translations = {
             'location': '中国湖南永州'
         },
         'journey-content': [
-            '在过去的两年半时间里，我一直沉浸在计算机科学的学习中，这个领域持续吸引着我，让我着迷。参与众多比赛的经历为我提供了宝贵的经验，不仅锻炼了我的研究能力，还加深了我对这门学科的理解。',
-            '一年前，在导师的指导下，我开始专注于多模态学习领域的研究，这让我取得了重要进展并积累了丰富的知识。目前，我正在积极寻求更多机会，以获取新的见解和多样化的经验。',
-            '我怀着无比的热情和坚定的信念继续这段学习旅程，相信未来的努力必将带来显著的成就。'
+            '作为一名计算机科学专业的大三学生，我在AI研究中找到了自己的使命。从最初的简单编程作业开始，每一个项目和比赛都让我逐渐认识到技术对人们生活的深远影响。这种认知深刻地塑造了我的理想。',
+            
+            '此刻，我正站在学术生涯的一个关键节点上。AI领域，特别是多模态学习，让我着迷，尽管它的广度和深度常常让我既兴奋又感到压力。在导师的指导下，我正学着在这复杂的领域中找寻方向，平衡热情与谦逊，深知自己仍有很长的路要走。',
+            
+            '展望未来，我心怀期待，也难免焦虑。研究的道路并不总是清晰，挑战时常令人生畏。但正是这些挑战推动着我前进。我投身这条道路，不是因为自认非凡，而是相信持续的努力和真诚的求知欲，终能让我为这个领域贡献一份力量，哪怕是微小的进步。'
         ],
         'research-interests-items': [
             '多模态学习',
             '人工智能',
             '计算机视觉',
             '机器学习',
+            '人机交互',
             '多模态AI系统',
             '具身智能'
         ],
@@ -529,7 +609,79 @@ const translations = {
         'problem-solving': '问题解决与创新',
         'problem-1': '分析思维：在竞赛和实际项目中应用数学建模解决复杂问题',
         'problem-2': '创新解决方案：为VISTA的多模态系统和I2T Magic的AI功能开发创新方法',
-        'problem-3': '研究方法论：为算法优化和系统改进进行系统性研究和分析'
+        'problem-3': '研究方法论：为算法优化和系统改进进行系统性研究和分析',
+        'career-positioning': '职业定位',
+        'career-items': {
+            'ai-engineer': {
+                'title': 'AI工程师',
+                'description': '专注于多模态AI系统开发（VISTA、I2T Magic），整合计算机视觉与自然语言处理技术。',
+                'tags': ['VISTA辅助系统', 'I2T Magic', '车牌检测系统'],
+                'skills': [
+                    '计算机视觉与NLP集成',
+                    'PyTorch与TensorFlow开发',
+                    '模型优化与部署'
+                ]
+            },
+            'fullstack': {
+                'title': '全栈开发工程师',
+                'description': '开发完整应用系统，包括VISTA（Flutter/FastAPI）和校园二手交易平台（Spring Boot/Vue.js）。',
+                'tags': ['校园二手交易平台', '数字夜市系统', '智能港口系统'],
+                'skills': [
+                    'Flutter与Vue.js前端开发',
+                    'Spring Boot与FastAPI后端',
+                    '微服务架构设计'
+                ]
+            },
+            'data-scientist': {
+                'title': '数据科学家',
+                'description': '在数学建模竞赛（CUMCM）和AI驱动的分析项目中应用数据分析。',
+                'tags': ['数模竞赛奖项', '螺线运动建模', '太阳镜面优化'],
+                'skills': [
+                    '数学建模',
+                    '数据分析与可视化',
+                    '算法优化'
+                ]
+            }
+        },
+        // Lab Introduction
+        'lab-intro-title': '实验室介绍',
+        'lab-intro-content': '胡鹏教授实验室专注于多模态AI技术的研究，致力于推动人工智能技术在医疗、教育、交通等领域的应用。实验室通过跨学科的研究方法，结合深度学习、计算机视觉和自然语言处理等技术，探索多模态数据的融合与理解，以解决现实世界中的复杂问题。',
+        
+        // Research Project
+        'research-project-title': '研究项目',
+        'project-name': '项目：多标签噪声下的跨模态检索研究',
+        'project-background-title': '项目背景',
+        'project-background-content': '在多模态数据中，标签噪声是一个常见的问题，尤其是在大规模数据集的标注过程中。噪声标签会影响模型的训练效果和检索性能。因此，研究如何在多标签噪声环境下提高跨模态检索的鲁棒性和准确性具有重要的理论和实际意义。',
+        
+        'research-objectives-title': '研究目标',
+        'objective-1': '探索多标签噪声的生成机制和特性，设计合理的噪声模型。',
+        'objective-2': '研究在多标签噪声环境下，如何提高跨模态检索模型的鲁棒性。',
+        'objective-3': '提出有效的噪声处理方法，以减少噪声对检索性能的影响。',
+        
+        'research-methods-title': '研究方法',
+        'method-1': '噪声模型设计：通过分析现有文献和数据集，设计了多种噪声生成方法。',
+        'method-2': '模型优化：结合深度学习技术，优化跨模态检索模型的架构，使其能够更好地适应噪声环境。',
+        'method-3': '实验评估：在多个标准数据集上进行实验，评估模型在不同噪声率下的性能。',
+        
+        'project-progress-title': '项目进展',
+        'progress-1': '已完成噪声模型的设计和初步实验。',
+        'progress-2': '正在进一步优化模型架构，以提高其在高噪声率下的性能。',
+        'progress-3': '主要负责噪声模型的设计、实验设计和数据分析。',
+        
+        // Research Skills
+        'research-skills-title': '研究技能与能力',
+        'skill-1-title': '深度学习与模型优化',
+        'skill-1-content': '熟练掌握深度学习框架（如PyTorch、TensorFlow），能够设计和优化复杂的神经网络架构。',
+        'skill-2-title': '数据处理与分析',
+        'skill-2-content': '具备强大的数据处理能力，能够高效地处理大规模多模态数据集，并使用Python、NumPy、Pandas等工具进行分析。',
+        'skill-3-title': '噪声建模与处理',
+        'skill-3-content': '深入研究了多标签噪声的生成机制，设计并实现了多种噪声模型。',
+        
+        // Future Outlook
+        'future-outlook-title': '未来展望',
+        'future-plan-1': '深入研究噪声处理方法，提高模型在复杂噪声环境下的性能。',
+        'future-plan-2': '将研究范围扩展到其他多模态任务，如多模态分类和多模态生成等。',
+        'future-plan-3': '积极参与国际学术会议和合作项目，与全球顶尖的研究团队进行交流和合作。',
     }
 };
 
@@ -656,6 +808,41 @@ function updateContent() {
         if (translations[currentLang]['interests-items'][index]) {
             element.textContent = translations[currentLang]['interests-items'][index];
         }
+    });
+
+    // Update career items
+    document.querySelectorAll('[data-i18n-career]').forEach(element => {
+        const [role, field] = element.getAttribute('data-i18n-career').split('.');
+        if (translations[currentLang]['career-items'][role] && 
+            translations[currentLang]['career-items'][role][field]) {
+            element.textContent = translations[currentLang]['career-items'][role][field];
+        }
+    });
+
+    // Update career tags
+    document.querySelectorAll('.career-tags').forEach(tagContainer => {
+        const role = tagContainer.closest('.competency-block')
+            .querySelector('[data-i18n-career]')
+            .getAttribute('data-i18n-career')
+            .split('.')[0];
+        
+        const tags = translations[currentLang]['career-items'][role]['tags'];
+        tagContainer.innerHTML = tags.map(tag => 
+            `<span class="tag">${tag}</span>`
+        ).join('');
+    });
+
+    // Update career skills
+    document.querySelectorAll('.competency-block ul').forEach(skillList => {
+        const role = skillList.closest('.competency-block')
+            .querySelector('[data-i18n-career]')
+            .getAttribute('data-i18n-career')
+            .split('.')[0];
+        
+        const skills = translations[currentLang]['career-items'][role]['skills'];
+        skillList.innerHTML = skills.map(skill => 
+            `<li>${skill}</li>`
+        ).join('');
     });
 }
 

@@ -96,7 +96,8 @@ body {
     list-style: none;
     padding: 0 1rem;
     margin: 0;
-    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .language-switch {
@@ -1469,31 +1470,43 @@ footer {
     margin: 1rem 0;
 }
 
-.close-btn {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--text-tertiary);
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+.readme-content pre code {
+    background-color: transparent;
+    padding: 0;
 }
 
-.close-btn:hover {
-    background: var(--surface-color-light);
-    color: var(--text-primary);
+.readme-content ul, 
+.readme-content ol {
+    padding-left: 2em;
+    margin: 1em 0;
 }
 
-.loading {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-tertiary);
+.readme-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.readme-content blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    margin: 1em 0;
+}
+
+.readme-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.readme-content table th,
+.readme-content table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.readme-content table tr:nth-child(2n) {
+    background-color: #f6f8fa;
 }
 
 /* Enhanced Project Grid */
@@ -1601,4 +1614,161 @@ footer {
 
 .markdown-content table tr:nth-child(2n) {
     background-color: #f6f8fa;
+}
+
+/* Career Section Styles */
+.career-section {
+    background: var(--surface-color-light);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.career-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.career-header i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.career-header h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.career-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.career-card {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-card i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.career-card h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.career-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Career Focus Grid Styles */
+.career-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.career-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: var(--primary-color);
+    color: var(--surface-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .career-cards,
+    .career-focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .career-cards,
+    .career-focus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add these styles to your existing CSS file */
+
+.project-section {
+    margin: 20px 0;
+}
+
+.project-section h5 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.project-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-item i {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.skill-item h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.future-plans-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.future-plans-list li {
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.future-plans-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
 }
