@@ -83,7 +83,8 @@ const translations = {
             'multimodal': 'Multimodal Learning',
             'generative': 'Generative AI',
             'embodied': 'Embodied Intelligence',
-            'hci': 'Human-Computer Interaction'
+            'hci': 'Human-Computer Interaction',
+            'hci-theme': 'HCI Theme'
         },
         'current-progress': 'Current Progress',
         'learning-stage': 'Learning Stage',
@@ -140,16 +141,16 @@ const translations = {
         'total-credits': 'Earned Credits',
         'compulsory-credits': 'Earned Compulsory Credits',
         'basic-info-items': {
-            'junior': 'Junior at SiChuan University',
+            'enrollment': 'Enrolled: September 1st, 2022',
+            'graduation': 'Expected Graduation: July 1st, 2026',
             'major': 'Computer Science and Technology',
-            'class': 'Class of 2022',
-            'admin-class': 'Administrative Class 1'
+            'class': 'Class of 2022'
         },
         'personal-details-items': {
             'gender': 'Male',
             'ethnicity': 'Chinese (Han)',
             'birthday': 'July 14, 2004',
-            'location': 'Yongzhou, Hunan, China'
+            'location': 'Chengdu, Sichuan, China'
         },
         'journey-content': [
             'I\'m a junior computer science student who found his calling in AI research. While my journey began with simple coding assignments, each project and competition gradually revealed to me the profound impact technology can have on people\'s lives. This realization has deeply shaped my aspirations.',
@@ -423,7 +424,8 @@ const translations = {
             'multimodal': '多模态学习',
             'generative': '生成式人工智能',
             'embodied': '具身智能',
-            'hci': '人机交互'
+            'hci': '人机交互',
+            'hci-theme': 'HCI主题'
         },
         'current-progress': '当前进展',
         'learning-stage': '学习阶段',
@@ -480,16 +482,16 @@ const translations = {
         'total-credits': '总学分',
         'compulsory-credits': '必修课学分',
         'basic-info-items': {
-            'junior': '四川大学在读本科生',
-            'major': '计算机科学与技术专业',
-            'class': '2022级',
-            'admin-class': '行政班级1班'
+            'enrollment': '入学时间：2022年9月1日',
+            'graduation': '预计毕业：2026年7月1日',
+            'major': '计算机科学与技术',
+            'class': '2022级'
         },
         'personal-details-items': {
             'gender': '男',
             'ethnicity': '汉族',
             'birthday': '2004年7月14日',
-            'location': '中国湖南永州'
+            'location': '四川省成都市'
         },
         'journey-content': [
             '作为一名计算机科学专业的大三学生，我在AI研究中找到了自己的使命。从最初的简单编程作业开始，每一个项目和比赛都让我逐渐认识到技术对人们生活的深远影响。这种认知深刻地塑造了我的理想。',
