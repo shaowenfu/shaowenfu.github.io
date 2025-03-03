@@ -1772,3 +1772,46 @@ footer {
     left: 0;
     color: #3498db;
 }
+
+/* Profile Card Styles */
+.profile-info-list {
+    margin-top: 1.5rem;
+}
+
+.profile-info-list .info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.profile-info-list .info-item:hover {
+    background-color: var(--surface-color-light);
+    transform: translateX(5px);
+}
+
+.profile-info-list .info-item i {
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.profile-info-list .info-item span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.profile-card h1 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.profile-card h3 {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}

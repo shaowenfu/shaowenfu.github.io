@@ -342,7 +342,44 @@ const translations = {
         'future-outlook-title': 'Future Outlook',
         'future-plan-1': 'Further research on noise processing methods to improve model performance in complex noise environments.',
         'future-plan-2': 'Expand research scope to other multimodal tasks such as classification and generation.',
-        'future-plan-3': 'Actively participate in international academic conferences and collaboration projects.'
+        'future-plan-3': 'Actively participate in international academic conferences and collaboration projects.',
+        
+        'methodology-title': 'Methodology',
+        'methodology-1': 'Noise Model Design: Developed a noise generation method that maintains dataset label distribution stability while introducing controlled noise rates.',
+        'methodology-2': 'Noise Transition Matrix: Implemented and optimized a noise transition matrix estimation approach for multi-label scenarios.',
+        'methodology-3': 'Model Architecture: Analyzed and modified existing cross-modal retrieval models to enhance noise robustness.',
+        
+        'implementation-title': 'Technical Implementation',
+        'implementation-1': 'Developed noise generation algorithms considering label correlation and distribution balance.',
+        'implementation-2': 'Implemented baseline models using PyTorch, including data preprocessing and model training pipelines.',
+        'implementation-3': 'Created evaluation frameworks for measuring model performance under various noise rates (0.1-0.5).',
+        
+        'current-findings-title': 'Current Findings',
+        'finding-1': 'Observed significant performance degradation in baseline models under high noise rates (>0.3).',
+        'finding-2': 'Identified the effectiveness of soft-label contrastive loss in noise-resistant learning.',
+        'finding-3': 'Demonstrated the importance of maintaining label distribution stability in noise generation.',
+        
+        'challenges-title': 'Technical Challenges',
+        'challenge-1': 'Developing accurate noise transition matrix estimation methods for multi-label scenarios.',
+        'challenge-2': 'Balancing model complexity with computational efficiency in noise-robust architectures.',
+        'challenge-3': 'Maintaining retrieval performance while implementing noise-resistant mechanisms.',
+        
+        'technical-skill-1': 'Implementation & Development',
+        'technical-skill-1-content': '• PyTorch implementation of cross-modal retrieval models\n• Custom dataset processing pipelines\n• Experiment tracking and visualization using TensorBoard',
+        'technical-skill-2': 'Data Analysis & Experimentation',
+        'technical-skill-2-content': '• Statistical analysis of noise effects\n• Performance metrics evaluation\n• Experimental design and validation',
+        'technical-skill-3': 'Research Methodology',
+        'technical-skill-3-content': '• Literature review and analysis\n• Problem formulation\n• Scientific documentation and reporting',
+        
+        'current-work-title': 'Current Work',
+        'current-work-1': 'Conducting comprehensive experiments on NUS-WIDE and MS-COCO datasets with various noise rates.',
+        'current-work-2': 'Implementing and evaluating different noise-robust training strategies.',
+        'current-work-3': 'Developing improved methods for noise transition matrix estimation in multi-label scenarios.',
+        
+        'future-directions-title': 'Future Research Directions',
+        'future-direction-1': 'Exploring self-supervised learning approaches for noise-robust cross-modal retrieval.',
+        'future-direction-2': 'Investigating the integration of pre-trained vision-language models for improved robustness.',
+        'future-direction-3': 'Developing theoretical frameworks for understanding multi-label noise in cross-modal scenarios.',
     },
     zh: {
         // Navigation
@@ -661,7 +698,7 @@ const translations = {
         'objective-3': '提出有效的噪声处理方法，以减少噪声对检索性能的影响。',
         
         'research-methods-title': '研究方法',
-        'method-1': '噪声模型设计：通过分析现有文献和数据集，设计了多种噪声生成方法。',
+        'method-1': '噪声模型设计：设计各种噪声生成方法通过分析现有文献和数据集。',
         'method-2': '模型优化：结合深度学习技术，优化跨模态检索模型的架构，使其能够更好地适应噪声环境。',
         'method-3': '实验评估：在多个标准数据集上进行实验，评估模型在不同噪声率下的性能。',
         
@@ -684,6 +721,43 @@ const translations = {
         'future-plan-1': '深入研究噪声处理方法，提高模型在复杂噪声环境下的性能。',
         'future-plan-2': '将研究范围扩展到其他多模态任务，如多模态分类和多模态生成等。',
         'future-plan-3': '积极参与国际学术会议和合作项目，与全球顶尖的研究团队进行交流和合作。',
+        
+        'methodology-title': '研究方法',
+        'methodology-1': '噪声模型设计：开发了一种在引入可控噪声率的同时保持数据集标签分布稳定的噪声生成方法。',
+        'methodology-2': '噪声转移矩阵：实现并优化了适用于多标签场景的噪声转移矩阵估计方法。',
+        'methodology-3': '模型架构：分析并修改现有跨模态检索模型以增强抗噪声能力。',
+        
+        'implementation-title': '技术实现',
+        'implementation-1': '开发考虑标签相关性和分布平衡的噪声生成算法。',
+        'implementation-2': '使用PyTorch实现基线模型，包括数据预处理和模型训练流程。',
+        'implementation-3': '创建评估框架，用于测量模型在不同噪声率(0.1-0.5)下的性能。',
+        
+        'current-findings-title': '当前发现',
+        'finding-1': '观察到基线模型在高噪声率(>0.3)下性能显著下降。',
+        'finding-2': '确认了软标签对比损失在抗噪声学习中的有效性。',
+        'finding-3': '证明了在噪声生成中保持标签分布稳定的重要性。',
+        
+        'challenges-title': '技术挑战',
+        'challenge-1': '开发适用于多标签场景的准确噪声转移矩阵估计方法。',
+        'challenge-2': '在噪声鲁棒架构中平衡模型复杂度和计算效率。',
+        'challenge-3': '在实现抗噪声机制的同时保持检索性能。',
+        
+        'technical-skill-1': '实现与开发',
+        'technical-skill-1-content': '• PyTorch实现跨模态检索模型\n• 自定义数据集处理流程\n• 使用TensorBoard进行实验跟踪和可视化',
+        'technical-skill-2': '数据分析与实验',
+        'technical-skill-2-content': '• 噪声效应统计分析\n• 性能指标评估\n• 实验设计与验证',
+        'technical-skill-3': '研究方法论',
+        'technical-skill-3-content': '• 文献综述与分析\n• 问题形式化\n• 科学文档编写与报告',
+        
+        'current-work-title': '当前工作',
+        'current-work-1': '在NUS-WIDE和MS-COCO数据集上进行不同噪声率下的综合实验。',
+        'current-work-2': '实现和评估不同的抗噪声训练策略。',
+        'current-work-3': '开发改进的多标签场景噪声转移矩阵估计方法。',
+        
+        'future-directions-title': '未来研究方向',
+        'future-direction-1': '探索用于抗噪声跨模态检索的自监督学习方法。',
+        'future-direction-2': '研究预训练视觉-语言模型的集成以提高鲁棒性。',
+        'future-direction-3': '开发理解跨模态场景中多标签噪声的理论框架。',
     }
 };
 
