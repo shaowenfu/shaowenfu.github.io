@@ -166,7 +166,8 @@ const translations = {
             'Machine Learning',
             'Human-Computer Interaction',
             'Multimodal AI Systems',
-            'Embodied Intelligence'
+            'Embodied Intelligence',
+            'Artificial Intelligence of Things'
         ],
         // Skills page
         'skills-title': 'Skills & Interests',
@@ -544,7 +545,8 @@ const translations = {
             '机器学习',
             '人机交互',
             '多模态AI系统',
-            '具身智能'
+            '具身智能',
+            '物联网人工智能'
         ],
         // Skills page
         'skills-title': '技能与兴趣',
