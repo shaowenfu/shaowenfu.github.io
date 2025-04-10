@@ -881,12 +881,6 @@ function updateContent() {
         }
     });
 
-    // Update interests items
-    document.querySelectorAll('[data-i18n-interests]').forEach((element, index) => {
-        if (translations[currentLang]['interests-items'][index]) {
-            element.textContent = translations[currentLang]['interests-items'][index];
-        }
-    });
 
     // Update career items
     document.querySelectorAll('[data-i18n-career]').forEach(element => {
