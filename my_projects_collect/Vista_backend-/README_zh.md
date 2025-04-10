@@ -179,7 +179,7 @@ docker run -d -p 8000:8000 vista-backend
 ## 📬 联系方式
 
 <p align="center">
-  <a href="mailto:shaowenfu.pg@gmail.com">
+  <a href="mailto:fushaowen@stu.scu.edu.cn">
     <img src="https://img.shields.io/badge/邮箱-shaowenfu.pg%40gmail.com-blue?style=for-the-badge&logo=gmail" alt="邮箱">
   </a>
   <a href="https://github.com/shaowenfu">

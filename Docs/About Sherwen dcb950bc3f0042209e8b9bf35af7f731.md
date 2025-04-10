@@ -36,7 +36,7 @@ Shaowen Fu (Sherwen)
 </aside>
 
 <aside>
-<img src="%25E4%25B8%258B%25E8%25BD%25BD.png" alt="%25E4%25B8%258B%25E8%25BD%25BD.png" width="40px" /> [shaowenfu.pg@gmail.com](mailto:shaowenfu.pg@gmail.com)
+<img src="%25E4%25B8%258B%25E8%25BD%25BD.png" alt="%25E4%25B8%258B%25E8%25BD%25BD.png" width="40px" /> [fushaowen@stu.scu.edu.cn](mailto:fushaowen@stu.scu.edu.cn)
 
 </aside>
 

@@ -110,7 +110,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📮 Contact
 
 - Maintainer: Sherwen Fu
-- Email:shaowenfu.pg@gmail.com
+- Email:fushaowen@stu.scu.edu.cn
 
 ## 🙏 Acknowledgments
 

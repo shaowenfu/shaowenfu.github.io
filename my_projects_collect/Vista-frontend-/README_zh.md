@@ -111,7 +111,7 @@ flutter run
 ## 📮 联系方式
 
 - 项目维护者：付少文
-- 邮箱：shaowenfu.pg@gmail.com
+- 邮箱：fushaowen@stu.scu.edu.cn
 
 ## 🙏 致谢
 

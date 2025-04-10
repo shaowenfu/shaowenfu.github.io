@@ -183,7 +183,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact | 联系方式
 
 <p align="center">
-  <a href="mailto:shaowenfu.pg@gmail.com">
+  <a href="mailto:fushaowen@stu.scu.edu.cn">
     <img src="https://img.shields.io/badge/Email-shaowenfu.pg%40gmail.com-blue?style=for-the-badge&logo=gmail" alt="Email">
   </a>
   <a href="https://github.com/shaowenfu">

@@ -151,4 +151,4 @@ boxes = detector.detect(image)
 
 ## 📧 联系方式
 
-如有问题和反馈，请开启issue或联系shaowenfu.pg@gmail.com。 
+如有问题和反馈，请开启issue或联系fushaowen@stu.scu.edu.cn。 
